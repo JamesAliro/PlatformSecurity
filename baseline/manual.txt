@@ -1,0 +1,17 @@
+bash
+bsdutils
+dash
+diffutils
+findutils
+grep
+gzip
+hostname
+libc-bin
+linux-generic
+locales
+lxd-installer
+ncurses-base
+ncurses-bin
+openssh-server
+ubuntu-server-minimal
+util-linux

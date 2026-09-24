@@ -1,0 +1,147 @@
+#cloud-config
+# See the autoinstall documentation at:
+# https://canonical-subiquity.readthedocs-hosted.com/en/latest/reference/autoinstall-reference.html
+autoinstall:
+  apt:
+    disable_components: []
+    fallback: offline-install
+    geoip: true
+    mirror-selection:
+      primary:
+      - country-mirror
+      - arches:
+        - amd64
+        - arm64
+        - i386
+        uri: http://archive.ubuntu.com/ubuntu/
+      - arches:
+        - armhf
+        - powerpc
+        - ppc64el
+        - riscv64
+        - s390x
+        uri: http://ports.ubuntu.com/ubuntu-ports
+    preserve_sources_list: false
+    security:
+    - arches:
+      - amd64
+      - arm64
+      - i386
+      uri: http://security.ubuntu.com/ubuntu/
+    - arches:
+      - armhf
+      - powerpc
+      - ppc64el
+      - riscv64
+      - s390x
+      uri: http://ports.ubuntu.com/ubuntu-ports
+  codecs:
+    install: false
+  drivers:
+    install: false
+  identity:
+    hostname: platformsecjames
+    password: $6$4TlurX5P.f.e7CG/$qTh6.JKZ.KuHAZUK2lDhisfO3bF5xXFEsQsVmdXQrkoX58hMfnrszkkI2Q3cQhanyn1/mrj6Dntkti4OJ4XUL/
+    realname: James Colesanti
+    username: jamesaliro
+  kernel:
+    package: linux-generic
+  keyboard:
+    layout: us
+    toggle: null
+    variant: ''
+  locale: en_US.UTF-8
+  network:
+    ethernets:
+      eth0:
+        dhcp4: true
+        dhcp6: true
+        match:
+          macaddress: 00:15:5d:cf:b4:02
+        set-name: eth0
+    version: 2
+  oem:
+    install: auto
+  source:
+    id: ubuntu-server-minimal
+    search_drivers: false
+  ssh:
+    allow-pw: true
+    authorized-keys: []
+    install-server: true
+  storage:
+    config:
+    - ptable: gpt
+      serial: 3600224805f7d1699463b065d91647100
+      wwn: '0x600224805f7d1699463b065d91647100'
+      path: /dev/sda
+      wipe: superblock-recursive
+      preserve: false
+      name: ''
+      grub_device: true
+      id: disk-sda
+      type: disk
+    - device: disk-sda
+      size: 1048576
+      flag: bios_grub
+      number: 1
+      preserve: false
+      grub_device: false
+      offset: 1048576
+      path: /dev/sda1
+      id: partition-0
+      type: partition
+    - device: disk-sda
+      size: 2147483648
+      wipe: superblock
+      number: 2
+      preserve: false
+      grub_device: false
+      offset: 2097152
+      path: /dev/sda2
+      id: partition-1
+      type: partition
+    - device: disk-sda
+      size: 319971917824
+      wipe: superblock
+      number: 3
+      preserve: false
+      grub_device: false
+      offset: 2149580800
+      path: /dev/sda3
+      id: partition-2
+      type: partition
+    - fstype: ext4
+      volume: partition-1
+      preserve: false
+      id: format-0
+      type: format
+    - name: ubuntu-vg
+      devices:
+      - partition-2
+      preserve: false
+      id: lvm_volgroup-0
+      type: lvm_volgroup
+    - name: ubuntu-lv
+      volgroup: lvm_volgroup-0
+      size: 107374182400B
+      wipe: superblock
+      preserve: false
+      path: /dev/ubuntu-vg/ubuntu-lv
+      id: lvm_partition-0
+      type: lvm_partition
+    - fstype: ext4
+      volume: lvm_partition-0
+      preserve: false
+      id: format-1
+      type: format
+    - path: /
+      device: format-1
+      id: mount-1
+      type: mount
+    - path: /boot
+      device: format-0
+      id: mount-0
+      type: mount
+  updates: security
+  version: 1
