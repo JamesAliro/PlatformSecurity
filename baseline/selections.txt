@@ -97,6 +97,7 @@ initramfs-tools-bin				install
 initramfs-tools-core				install
 intel-microcode					install
 iproute2					install
+iputils-ping					install
 iso-codes					install
 iucode-tool					install
 kbd						install
@@ -107,6 +108,7 @@ klibc-utils					install
 kmod						install
 kpartx						install
 krb5-locales					install
+less						install
 libacl1:amd64					install
 libaio1t64:amd64				install
 libapparmor1:amd64				install
@@ -158,9 +160,11 @@ libedit2:amd64					install
 libefiboot1t64:amd64				install
 libefivar1t64:amd64				install
 libelf1t64:amd64				install
+libestr0:amd64					install
 libevdev2:amd64					install
 libexpat1:amd64					install
 libext2fs2t64:amd64				install
+libfastjson4:amd64				install
 libfdisk1:amd64					install
 libffi8:amd64					install
 libfido2-1:amd64				install
@@ -178,6 +182,7 @@ libglib2.0-data					install
 libgmp10:amd64					install
 libgnutls30t64:amd64				install
 libgpg-error0:amd64				install
+libgpm2:amd64					install
 libgprofng0:amd64				install
 libgssapi-krb5-2:amd64				install
 libgstreamer1.0-0:amd64				install
@@ -267,6 +272,7 @@ libsgutils2-1.48:amd64				install
 libslang2:amd64					install
 libsmartcols1:amd64				install
 libsnappy1v5:amd64				install
+libsodium23:amd64				install
 libsort-naturally-perl				install
 libsqlite3-0:amd64				install
 libss2:amd64					install
@@ -350,6 +356,7 @@ linux-tools-common				install
 locales						install
 login						install
 login.defs					install
+logrotate					install
 logsave						install
 lsb-base					install
 lsb-release					install
@@ -364,6 +371,7 @@ media-types					install
 mokutil						install
 mount						install
 multipath-tools					install
+nano						install
 ncurses-base					install
 ncurses-bin					install
 ncurses-term					install
@@ -465,6 +473,7 @@ python3.14					install
 python3.14-minimal				install
 readline-common					install
 rpcsvc-proto					install
+rsyslog						install
 rust-coreutils					install
 screen						install
 sed						install
@@ -504,6 +513,9 @@ usb.ids						install
 usbmuxd						install
 usbutils					install
 util-linux					install
+vim						install
+vim-common					install
+vim-runtime					install
 wget						install
 wireless-regdb					install
 xauth						install

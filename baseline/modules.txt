@@ -1,0 +1,49 @@
+Module                  Size  Used by
+aesni_intel            98304  0
+autofs4                61440  2
+binfmt_misc            24576  1
+cfg80211             1548288  0
+dm_log                 20480  2 dm_region_hash,dm_mirror
+dm_mirror              28672  0
+dm_multipath           45056  0
+dm_region_hash         24576  1 dm_mirror
+dmi_sysfs              28672  0
+efi_pstore             12288  0
+floppy                143360  0
+ghash_clmulni_intel    12288  0
+hid                   282624  2 hid_hyperv,hid_generic
+hid_generic            12288  0
+hid_hyperv             16384  0
+hv_balloon             45056  0
+hv_netvsc             126976  0
+hv_sock                24576  0
+hv_storvsc             32768  2
+hv_utils               45056  0
+hv_vmbus              188416  8 hv_balloon,hv_utils,hv_netvsc,hid_hyperv,hv_storvsc,hyperv_keyboard,hyperv_drm,hv_sock
+hyperv_drm             28672  0
+hyperv_keyboard        12288  0
+i2c_piix4              36864  0
+i2c_smbus              20480  1 i2c_piix4
+inet_diag              24576  2 tcp_diag,udp_diag
+input_leds             12288  0
+intel_pmc_core        151552  0
+intel_pmc_ssram_telemetry    16384  1 intel_pmc_core
+intel_rapl_common      57344  1 intel_rapl_msr
+intel_rapl_msr         20480  0
+intel_uncore_frequency_common    20480  0
+intel_vsec             24576  2 intel_pmc_ssram_telemetry,pmt_telemetry
+joydev                 32768  0
+mac_hid                12288  0
+nfnetlink              20480  1
+pata_acpi              12288  0
+pmt_class              20480  2 pmt_telemetry,pmt_discovery
+pmt_discovery          24576  1 pmt_telemetry
+pmt_telemetry          16384  1 intel_pmc_core
+psmouse               225280  0
+sch_fq_codel           28672  9
+scsi_transport_fc     122880  1 hv_storvsc
+serio_raw              20480  0
+tcp_diag               20480  0
+udp_diag               12288  0
+vmgenid                12288  0
+vsock                  73728  1 hv_sock

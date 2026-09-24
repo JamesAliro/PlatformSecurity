@@ -1,516 +1,528 @@
-3cpio	0.14.0-1ubuntu1	amd64	optional
-adduser	3.153ubuntu1	all	important
-amd64-microcode	3.20251202.1ubuntu2	amd64	standard
-apparmor	5.0.2-0ubuntu1~26.04.1	amd64	optional
-apport	2.34.1-0ubuntu0.1	all	optional
-apport-core-dump-handler	2.34.1-0ubuntu0.1	all	optional
-apport-symptoms	0.25build1	all	optional
-appstream	1.1.2-1	amd64	optional
-apt	3.2.0	amd64	important
-base-files	14ubuntu6.2	amd64	required
-base-passwd	3.6.8	amd64	required
-bash	5.3-2ubuntu1	amd64	required
-bash-completion	1:2.16.0-8build1	all	standard
-bcache-tools	1.0.8-5ubuntu1	amd64	optional
-binutils	2.46-3ubuntu2	amd64	optional
-binutils-common	2.46-3ubuntu2	amd64	optional
-binutils-x86-64-linux-gnu	2.46-3ubuntu2	amd64	optional
-bpfcc-tools	0.35.0+ds-1ubuntu2	all	optional
-bpftool	7.7.0+7.0.0-34.34	amd64	optional
-bpftrace	0.25.0-1ubuntu1	amd64	optional
-bsdextrautils	2.41.3-3ubuntu2.2	amd64	optional
-bsdutils	1:2.41.3-3ubuntu2.2	amd64	standard
-btrfs-progs	6.17.1-1build1	amd64	optional
-busybox-initramfs	1:1.37.0-7ubuntu1	amd64	optional
-busybox-static	1:1.37.0-7ubuntu1	amd64	optional
-ca-certificates	20260601~26.04.1	all	standard
-chrony	4.8-2ubuntu1	amd64	optional
-cloud-guest-utils	0.33-1build1	all	optional
-cloud-init	26.1-0ubuntu3~26.04.1	all	optional
-cloud-init-base	26.1-0ubuntu3~26.04.1	all	optional
-console-setup	1.237ubuntu3.1	all	optional
-console-setup-linux	1.237ubuntu3.1	all	optional
-coreutils	9.5-1ubuntu2+0.0.0~ubuntu25	all	required
-coreutils-from-uutils	0.0.0~ubuntu25	all	required
-crash	9.0.1+~16.3-1ubuntu1	amd64	optional
-cryptsetup	2:2.8.4-1ubuntu4	amd64	optional
-cryptsetup-bin	2:2.8.4-1ubuntu4	amd64	optional
-curl	8.18.0-1ubuntu2.7	amd64	optional
-dash	0.5.12-12ubuntu3	amd64	required
-dbus	1.16.2-2ubuntu4	amd64	standard
-dbus-bin	1.16.2-2ubuntu4	amd64	optional
-dbus-daemon	1.16.2-2ubuntu4	amd64	optional
-dbus-session-bus-common	1.16.2-2ubuntu4	all	optional
-dbus-system-bus-common	1.16.2-2ubuntu4	all	optional
-dbus-user-session	1.16.2-2ubuntu4	amd64	optional
-debconf	1.5.92	all	required
-debianutils	5.23.2build1	amd64	required
-dhcpcd-base	1:10.3.0-7	amd64	important
-diffutils	1:3.12-1ubuntu0.1	amd64	required
-dirmngr	2.4.8-4ubuntu3.1	amd64	optional
-distro-info-data	0.72-0ubuntu0.26.04.1	all	optional
-dmeventd	2:1.02.205-2ubuntu3	amd64	optional
-dmsetup	2:1.02.205-2ubuntu3	amd64	optional
-dpkg	1.23.7ubuntu1	amd64	required
-dracut	110-11ubuntu0.1	all	optional
-dracut-core	110-11ubuntu0.1	amd64	optional
-dracut-install	110-11ubuntu0.1	amd64	optional
-e2fsprogs	1.47.2-3ubuntu4	amd64	required
-eatmydata	131-2build1	all	optional
-ethtool	1:6.19-1	amd64	optional
-fdisk	2.41.3-3ubuntu2.2	amd64	important
-file	1:5.46-5build2	amd64	standard
-finalrd	9build2	all	optional
-findutils	4.10.0-3build2	amd64	required
-firmware-sof-signed	2025.12.2-1	all	optional
-fuse3	3.18.2-1	amd64	optional
-gawk	1:5.3.2-1ubuntu1.1	amd64	optional
-gcc-16-base	16-20260322-1ubuntu1	amd64	required
-gdisk	1.0.10-2build1	amd64	optional
-gettext-base	0.23.2-1	amd64	standard
-gir1.2-girepository-3.0	2.88.0-1ubuntu0.1	amd64	optional
-gir1.2-glib-2.0	2.88.0-1ubuntu0.1	amd64	optional
-gir1.2-packagekitglib-1.0	1.3.4-3ubuntu1.2	amd64	optional
-gnu-coreutils	9.7-3ubuntu2.1	amd64	required
-gnupg	2.4.8-4ubuntu3.1	all	optional
-gnupg-l10n	2.4.8-4ubuntu3.1	all	optional
-gnupg-utils	2.4.8-4ubuntu3.1	amd64	optional
-gpg	2.4.8-4ubuntu3.1	amd64	optional
-gpg-agent	2.4.8-4ubuntu3.1	amd64	optional
-gpg-wks-client	2.4.8-4ubuntu3.1	amd64	optional
-gpgconf	2.4.8-4ubuntu3.1	amd64	optional
-gpgsm	2.4.8-4ubuntu3.1	amd64	optional
-gpgv	2.4.8-4ubuntu3.1	amd64	important
-grep	3.12-1	amd64	required
-groff-base	1.23.0-10	amd64	important
-grub-gfxpayload-lists	0.7build3	amd64	optional
-grub-pc	2.14-2ubuntu2.1	amd64	optional
-grub-pc-bin	2.14-2ubuntu2.1	amd64	optional
-grub2-common	2.14-2ubuntu2.1	amd64	optional
-gzip	1.14-1~exp2ubuntu1.1	amd64	required
-hostname	3.25build1	amd64	required
-hwctl	0.11.0-0ubuntu1	amd64	optional
-hwdata	0.394-1build1	all	optional
-ieee-data	20240722build1	all	optional
-init-system-helpers	1.69	all	required
-initramfs-tools-bin	0.151ubuntu1	amd64	optional
-initramfs-tools-core	0.151ubuntu1	all	optional
-intel-microcode	3.20260210.1ubuntu2	amd64	standard
-iproute2	6.19.0-1ubuntu1.1	amd64	important
-iso-codes	4.20.1-1	all	optional
-iucode-tool	2.3.1-3build2	amd64	optional
-kbd	2.7.1-2ubuntu2	amd64	optional
-kdump-tools	1:1.10.7ubuntu3	amd64	optional
-kexec-tools	1:2.0.32-3ubuntu1	amd64	optional
-keyboard-configuration	1.237ubuntu3.1	all	optional
-klibc-utils	2.0.14-1ubuntu2	amd64	optional
-kmod	34.2-2ubuntu2	amd64	important
-kpartx	0.14.3-2ubuntu1	amd64	optional
-krb5-locales	1.22.1-2ubuntu4.1	all	optional
-libacl1	2.3.2-2	amd64	required
-libaio1t64	0.3.113-8build1	amd64	optional
-libapparmor1	5.0.2-0ubuntu1~26.04.1	amd64	optional
-libappstream5	1.1.2-1	amd64	optional
-libapt-pkg7.0	3.2.0	amd64	important
-libassuan9	3.0.2-2build1	amd64	optional
-libatomic1	16-20260322-1ubuntu1	amd64	optional
-libattr1	1:2.5.2-4ubuntu0.1	amd64	optional
-libaudit-common	1:4.1.2-1build1	all	required
-libaudit1	1:4.1.2-1build1	amd64	required
-libbinutils	2.46-3ubuntu2	amd64	optional
-libblkid1	2.41.3-3ubuntu2.2	amd64	optional
-libbpf1	1:1.6.3-1ubuntu1	amd64	optional
-libbpfcc	0.35.0+ds-1ubuntu2	amd64	optional
-libbrotli1	1.2.0-3build1	amd64	optional
-libbsd0	0.12.2-2build2	amd64	required
-libbz2-1.0	1.0.8-6ubuntu0.1	amd64	important
-libc-bin	2.43-2ubuntu2.4	amd64	required
-libc-dev-bin	2.43-2ubuntu2.4	amd64	optional
-libc-gconv-modules-extra	2.43-2ubuntu2.4	amd64	optional
-libc6	2.43-2ubuntu2.4	amd64	optional
-libc6-dev	2.43-2ubuntu2.4	amd64	optional
-libcap-ng0	0.8.5-4build5	amd64	required
-libcap2	1:2.75-10ubuntu2	amd64	optional
-libcap2-bin	1:2.75-10ubuntu2	amd64	important
-libcbor0.10	0.10.2-2ubuntu3	amd64	optional
-libclang-cpp21	1:21.1.8-6ubuntu1	amd64	optional
-libclang1-21	1:21.1.8-6ubuntu1	amd64	optional
-libcom-err2	1.47.2-3ubuntu4	amd64	required
-libcrypt1	1:4.5.1-1	amd64	required
-libcryptsetup12	2:2.8.4-1ubuntu4	amd64	optional
-libctf-nobfd0	2.46-3ubuntu2	amd64	optional
-libctf0	2.46-3ubuntu2	amd64	optional
-libcurl3t64-gnutls	8.18.0-1ubuntu2.7	amd64	optional
-libcurl4t64	8.18.0-1ubuntu2.7	amd64	optional
-libdb5.3t64	5.3.28+dfsg2-10ubuntu1	amd64	required
-libdbus-1-3	1.16.2-2ubuntu4	amd64	optional
-libdebconfclient0	0.280ubuntu1	amd64	required
-libdebuginfod-common	0.194-4	all	optional
-libdebuginfod1t64	0.194-4	amd64	optional
-libdevmapper-event1.02.1	2:1.02.205-2ubuntu3	amd64	optional
-libdevmapper1.02.1	2:1.02.205-2ubuntu3	amd64	optional
-libdrm-common	2.4.131-1	all	optional
-libdrm2	2.4.131-1	amd64	optional
-libduktape207	2.7.0+tests-0ubuntu4	amd64	optional
-libdw1t64	0.194-4	amd64	optional
-libeatmydata1	131-2build1	amd64	optional
-libedit2	3.1-20251016-1	amd64	optional
-libefiboot1t64	39-2	amd64	optional
-libefivar1t64	39-2	amd64	optional
-libelf1t64	0.194-4	amd64	optional
-libevdev2	1.13.6+dfsg-1	amd64	optional
-libexpat1	2.7.4-1ubuntu0.2	amd64	optional
-libext2fs2t64	1.47.2-3ubuntu4	amd64	required
-libfdisk1	2.41.3-3ubuntu2.2	amd64	optional
-libffi8	3.5.2-4	amd64	optional
-libfido2-1	1.16.0-2build1	amd64	optional
-libfreetype6	2.14.2+dfsg-1ubuntu0.1	amd64	optional
-libfuse3-4	3.18.2-1	amd64	optional
-libfyaml0	0.9.4-1	amd64	optional
-libgcc-s1	16-20260322-1ubuntu1	amd64	required
-libgcrypt20	1.12.0-2ubuntu1.1	amd64	optional
-libgdbm-compat4t64	1.26-1build1	amd64	optional
-libgdbm6t64	1.26-1build1	amd64	optional
-libgirepository-2.0-0	2.88.0-1ubuntu0.1	amd64	optional
-libglib2.0-0t64	2.88.0-1ubuntu0.1	amd64	optional
-libglib2.0-bin	2.88.0-1ubuntu0.1	amd64	optional
-libglib2.0-data	2.88.0-1ubuntu0.1	all	optional
-libgmp10	2:6.3.0+dfsg-5ubuntu2	amd64	required
-libgnutls30t64	3.8.12-2ubuntu1.1	amd64	optional
-libgpg-error0	1.58-2	amd64	important
-libgprofng0	2.46-3ubuntu2	amd64	optional
-libgssapi-krb5-2	1.22.1-2ubuntu4.1	amd64	optional
-libgstreamer1.0-0	1.28.2-1	amd64	optional
-libgudev-1.0-0	1:238-7build1	amd64	optional
-libhogweed6t64	3.10.2-1	amd64	optional
-libicu78	78.2-2ubuntu1	amd64	optional
-libidn2-0	2.3.8-4build1	amd64	optional
-libimobiledevice-1.0-6	1.4.0-1build1	amd64	optional
-libimobiledevice-glue-1.0-0	1.3.2-2build1	amd64	optional
-libinih1	61-1ubuntu1	amd64	optional
-libintl-perl	1.37-1	all	optional
-libintl-xs-perl	1.37-1	amd64	optional
-libisns0t64	0.101-2.1ubuntu0.1	amd64	optional
-libjansson4	2.14-2build4	amd64	optional
-libjs-sphinxdoc	8.2.3-12	all	optional
-libjson-c5	0.18+ds-3	amd64	optional
-libk5crypto3	1.22.1-2ubuntu4.1	amd64	optional
-libkeyutils1	1.6.3-6ubuntu3	amd64	optional
-libklibc	2.0.14-1ubuntu2	amd64	optional
-libkmod2	34.2-2ubuntu2	amd64	optional
-libkrb5-3	1.22.1-2ubuntu4.1	amd64	optional
-libkrb5support0	1.22.1-2ubuntu4.1	amd64	optional
-libksba8	1.6.7-2build1	amd64	optional
-libldap-common	2.6.10+dfsg-1ubuntu5	all	optional
-libldap2	2.6.10+dfsg-1ubuntu5	amd64	optional
-libllvm21	1:21.1.8-6ubuntu1	amd64	optional
-liblocale-gettext-perl	1.07-8	amd64	required
-liblvm2cmd2.03	2.03.31-2ubuntu3	amd64	optional
-liblz4-1	1.10.0-8	amd64	important
-liblzma5	5.8.3-1	amd64	required
-liblzo2-2	2.10-3build2	amd64	optional
-libmagic-mgc	1:5.46-5build2	amd64	optional
-libmagic1t64	1:5.46-5build2	amd64	optional
-libmd0	1.1.0-2build4	amd64	required
-libmnl0	1.0.5-3build1	amd64	optional
-libmodule-find-perl	0.17-1	all	optional
-libmount1	2.41.3-3ubuntu2.2	amd64	optional
-libmpathcmd0	0.14.3-2ubuntu1	amd64	optional
-libmpathpersist0	0.14.3-2ubuntu1	amd64	optional
-libmpfr6	4.2.2-3	amd64	optional
-libmultipath0	0.14.3-2ubuntu1	amd64	optional
-libncursesw6	6.6+20251231-1	amd64	required
-libnetplan1	1.2-1ubuntu5	amd64	optional
-libnettle8t64	3.10.2-1	amd64	optional
-libnghttp2-14	1.68.0-2ubuntu0.2	amd64	optional
-libnl-3-200	3.12.0-2	amd64	optional
-libnl-genl-3-200	3.12.0-2	amd64	optional
-libnpth0t64	1.8-3build1	amd64	optional
-libnss-systemd	259.5-0ubuntu3.4	amd64	standard
-libnuma1	2.0.19-1build1	amd64	optional
-libopeniscsiusr	2.1.11-3ubuntu3	amd64	optional
-libp11-kit0	0.26.2-2	amd64	optional
-libpackagekit-glib2-18	1.3.4-3ubuntu1.2	amd64	optional
-libpam-cap	1:2.75-10ubuntu2	amd64	optional
-libpam-modules	1.7.0-5ubuntu3.2	amd64	required
-libpam-modules-bin	1.7.0-5ubuntu3.2	amd64	required
-libpam-runtime	1.7.0-5ubuntu3.2	all	required
-libpam-systemd	259.5-0ubuntu3.4	amd64	standard
-libpam0g	1.7.0-5ubuntu3.2	amd64	optional
-libpci3	1:3.14.0-1build2	amd64	optional
-libpcre2-8-0	10.46-1build1	amd64	required
-libperl5.40	5.40.1-7ubuntu0.3	amd64	optional
-libplist-2.0-4	2.7.0+git20250820-1build1	amd64	optional
-libpng16-16t64	1.6.57-1	amd64	optional
-libpolkit-agent-1-0	127-2ubuntu1.1	amd64	optional
-libpolkit-gobject-1-0	127-2ubuntu1.1	amd64	optional
-libpopt0	1.19+dfsg-2build1	amd64	optional
-libproc-processtable-perl	0.637-1	amd64	optional
-libproc2-0	2:4.0.4-9ubuntu1	amd64	required
-libpsl5t64	0.21.2-1.1build2	amd64	optional
-libpython3-stdlib	3.14.3-0ubuntu2	amd64	optional
-libpython3.14	3.14.4-1ubuntu0.2	amd64	optional
-libpython3.14-minimal	3.14.4-1ubuntu0.2	amd64	optional
-libpython3.14-stdlib	3.14.4-1ubuntu0.2	amd64	optional
-libreadline8t64	8.3-4	amd64	optional
-librtmp1	2.4+20151223.gitfa8646d.1-3	amd64	optional
-libsasl2-2	2.1.28+dfsg1-9ubuntu3	amd64	optional
-libsasl2-modules	2.1.28+dfsg1-9ubuntu3	amd64	optional
-libsasl2-modules-db	2.1.28+dfsg1-9ubuntu3	amd64	optional
-libseccomp2	2.6.0-2ubuntu5	amd64	important
-libselinux1	3.9-4build1	amd64	required
-libsemanage-common	3.9-1build1	all	required
-libsemanage2	3.9-1build1	amd64	required
-libsepol2	3.9-2	amd64	required
-libsframe3	2.46-3ubuntu2	amd64	optional
-libsgutils2-1.48	1.48-3ubuntu3.1	amd64	optional
-libslang2	2.3.3-5build1	amd64	optional
-libsmartcols1	2.41.3-3ubuntu2.2	amd64	optional
-libsnappy1v5	1.2.2-2	amd64	optional
-libsort-naturally-perl	1.03-4	all	optional
-libsqlite3-0	3.46.1-9ubuntu0.3	amd64	optional
-libss2	1.47.2-3ubuntu4	amd64	required
-libssh2-1t64	1.11.1-1ubuntu0.26.04.4	amd64	optional
-libssl3t64	3.5.5-1ubuntu3.5	amd64	optional
-libstdc++6	16-20260322-1ubuntu1	amd64	important
-libstemmer0d	3.0.1-1	amd64	optional
-libsystemd-shared	259.5-0ubuntu3.4	amd64	optional
-libsystemd0	259.5-0ubuntu3.4	amd64	required
-libtasn1-6	4.21.0-2	amd64	optional
-libterm-readkey-perl	2.38-2build5	amd64	optional
-libtext-charwidth-perl	0.04-11build4	amd64	required
-libtext-wrapi18n-perl	0.06-10	all	required
-libtinfo6	6.6+20251231-1	amd64	required
-libtirpc-common	1.3.7-0.1	all	optional
-libtirpc3t64	1.3.7-0.1	amd64	optional
-libtraceevent1	1:1.8.7-1	amd64	optional
-libuchardet0	0.0.8-2	amd64	optional
-libudev1	259.5-0ubuntu3.4	amd64	required
-libunistring5	1.3-2build1	amd64	optional
-libupower-glib3	1.91.1-1	amd64	optional
-liburcu8t64	0.15.6-1	amd64	optional
-libusb-1.0-0	2:1.0.29-2build1	amd64	optional
-libusbmuxd-2.0-7	2.1.1-1	amd64	optional
-libuuid1	2.41.3-3ubuntu2.2	amd64	optional
-libwrap0	7.6.q-36build2	amd64	optional
-libx11-6	2:1.8.13-1	amd64	optional
-libx11-data	2:1.8.13-1	all	optional
-libxau6	1:1.0.11-1build2	amd64	optional
-libxcb1	1.17.0-2ubuntu1	amd64	optional
-libxdmcp6	1:1.1.5-2	amd64	optional
-libxext6	2:1.3.4-1build3	amd64	optional
-libxml2-16	2.15.2+dfsg-0.1ubuntu0.2	amd64	optional
-libxmlb2	0.3.24-2	amd64	optional
-libxmuu1	2:1.1.3-4	amd64	optional
-libxtables12	1.8.11-2ubuntu3	amd64	optional
-libxxhash0	0.8.3-2build1	amd64	important
-libyaml-0-2	0.2.5-2build3	amd64	optional
-libzstd1	1.5.7+dfsg-3	amd64	required
-linux-base	4.15ubuntu5	all	optional
-linux-firmware	20260319.git217ca6e4.1ubuntu	all	optional
-linux-firmware-amd-graphics	20260319.git217ca6e4-0ubuntu3.1	all	optional
-linux-firmware-amd-misc	20260319.git217ca6e4-0ubuntu1.1	all	optional
-linux-firmware-broadcom-wireless	20260319.git217ca6e4-0ubuntu1.1	all	optional
-linux-firmware-intel-graphics	20260319.git217ca6e4-0ubuntu2.1	all	optional
-linux-firmware-intel-misc	20260319.git217ca6e4-0ubuntu1.2	all	optional
-linux-firmware-intel-wireless	20260319.git217ca6e4-0ubuntu2.1	all	optional
-linux-firmware-marvell-prestera	20260319.git217ca6e4-0ubuntu1.2	all	optional
-linux-firmware-marvell-wireless	20260319.git217ca6e4-0ubuntu1.1	all	optional
-linux-firmware-mediatek	20260319.git217ca6e4-0ubuntu1.2	all	optional
-linux-firmware-mellanox-spectrum	20260319.git217ca6e4-0ubuntu1.1	all	optional
-linux-firmware-misc	20260319.git217ca6e4-0ubuntu2.2	all	optional
-linux-firmware-netronome	20260319.git217ca6e4-0ubuntu1.1	all	optional
-linux-firmware-nvidia-graphics	20260319.git217ca6e4-0ubuntu1.1	all	optional
-linux-firmware-qlogic	20260319.git217ca6e4-0ubuntu1.1	all	optional
-linux-firmware-qualcomm-graphics	20260319.git217ca6e4-0ubuntu1.1	all	optional
-linux-firmware-qualcomm-misc	20260319.git217ca6e4-0ubuntu2.1	all	optional
-linux-firmware-qualcomm-wireless	20260319.git217ca6e4-0ubuntu1.2	all	optional
-linux-firmware-realtek	20260319.git217ca6e4-0ubuntu1.2	all	optional
-linux-generic	7.0.0-34.34	amd64	optional
-linux-headers-7.0.0-30	7.0.0-30.30	all	optional
-linux-headers-7.0.0-30-generic	7.0.0-30.30	amd64	optional
-linux-headers-7.0.0-34	7.0.0-34.34	all	optional
-linux-headers-7.0.0-34-generic	7.0.0-34.34	amd64	optional
-linux-headers-generic	7.0.0-34.34	amd64	optional
-linux-image-7.0.0-34-generic	7.0.0-34.34	amd64	optional
-linux-image-generic	7.0.0-34.34	amd64	optional
-linux-image-unsigned-7.0.0-30-generic	7.0.0-30.30	amd64	optional
-linux-libc-dev	7.0.0-34.34	amd64	optional
-linux-main-modules-zfs-7.0.0-30-generic	7.0.0-30.30	amd64	optional
-linux-main-modules-zfs-7.0.0-34-generic	7.0.0-34.34	amd64	optional
-linux-modules-7.0.0-30-generic	7.0.0-30.30	amd64	optional
-linux-modules-7.0.0-34-generic	7.0.0-34.34	amd64	optional
-linux-perf	7.0.0-34.34	amd64	optional
-linux-sysctl-defaults	4.15ubuntu5	all	important
-linux-tools-7.0.0-30	7.0.0-30.30	amd64	optional
-linux-tools-7.0.0-30-generic	7.0.0-30.30	amd64	optional
-linux-tools-7.0.0-34	7.0.0-34.34	amd64	optional
-linux-tools-7.0.0-34-generic	7.0.0-34.34	amd64	optional
-linux-tools-common	7.0.0-34.34	all	optional
-locales	2.43-2ubuntu2.4	all	standard
-login	1:4.16.0-2+really2.41.3-3ubuntu2.2	amd64	required
-login.defs	1:4.17.4-2ubuntu3	all	required
-logsave	1.47.2-3ubuntu4	amd64	required
-lsb-base	11.6build1	all	optional
-lsb-release	12.1-2build1	all	optional
-lvm2	2.03.31-2ubuntu3	amd64	optional
-lxd-installer	14ubuntu0	all	optional
-makedumpfile	1:1.7.7-1	amd64	optional
-manpages	6.17-1	all	standard
-manpages-dev	6.17-1	all	optional
-mawk	1.3.4.20260129-1	amd64	required
-mdadm	4.5-5ubuntu1	amd64	optional
-media-types	14.0.0build1	all	standard
-mokutil	0.7.2-2	amd64	optional
-mount	2.41.3-3ubuntu2.2	amd64	required
-multipath-tools	0.14.3-2ubuntu1	amd64	optional
-ncurses-base	6.6+20251231-1	all	required
-ncurses-bin	6.6+20251231-1	amd64	required
-ncurses-term	6.6+20251231-1	all	standard
-needrestart	3.11-1ubuntu2	all	optional
-netbase	6.5build1	all	important
-netcat-openbsd	1.234-1	amd64	important
-netplan-generator	1.2-1ubuntu5	amd64	optional
-netplan.io	1.2-1ubuntu5	amd64	optional
-networkd-dispatcher	2.2.4-1.1ubuntu1	all	optional
-open-iscsi	2.1.11-3ubuntu3	amd64	optional
-openssh-client	1:10.2p1-2ubuntu3.6	amd64	standard
-openssh-server	1:10.2p1-2ubuntu3.6	amd64	optional
-openssh-sftp-server	1:10.2p1-2ubuntu3.6	amd64	optional
-openssl	3.5.5-1ubuntu3.5	amd64	optional
-openssl-provider-legacy	3.5.5-1ubuntu3.5	amd64	optional
-os-prober	1.84ubuntu1	amd64	optional
-packagekit	1.3.4-3ubuntu1.2	amd64	optional
-passwd	1:4.17.4-2ubuntu3	amd64	required
-pci.ids	0.0~2026.02.12-1	all	optional
-pciutils	1:3.14.0-1build2	amd64	standard
-perl	5.40.1-7ubuntu0.3	amd64	standard
-perl-base	5.40.1-7ubuntu0.3	amd64	required
-perl-modules-5.40	5.40.1-7ubuntu0.3	all	optional
-pinentry-curses	1.3.2-3ubuntu1	amd64	optional
-pnp.ids	0.394-1build1	all	optional
-polkitd	127-2ubuntu1.1	amd64	optional
-procps	2:4.0.4-9ubuntu1	amd64	required
-publicsuffix	20260129.1928-1	all	optional
-python-apt-common	3.1.0ubuntu1	all	optional
-python-babel-localedata	2.17.0-2	all	optional
-python3	3.14.3-0ubuntu2	amd64	optional
-python3-apport	2.34.1-0ubuntu0.1	all	optional
-python3-apt	3.1.0ubuntu1	amd64	optional
-python3-attr	25.4.0-1build1	all	optional
-python3-autocommand	2.2.2-4	all	optional
-python3-babel	2.17.0-2	all	optional
-python3-bcrypt	5.0.0-3build1	amd64	optional
-python3-blinker	1.9.0-2build1	all	optional
-python3-bpfcc	0.35.0+ds-1ubuntu2	all	optional
-python3-certifi	2026.1.4+ds-1	all	optional
-python3-cffi-backend	2.0.0-3build1	amd64	optional
-python3-chardet	5.2.0+dfsg-2build1	all	optional
-python3-click	8.2.0+0.really.8.1.8-1build1	all	optional
-python3-configobj	5.0.9-1build1	all	optional
-python3-cryptography	46.0.5-1ubuntu2.2	amd64	optional
-python3-dbus	1.4.0-1build2	amd64	optional
-python3-debconf	1.5.92	all	optional
-python3-distro	1.9.0-1build1	all	optional
-python3-distro-info	1.15	all	optional
-python3-distupgrade	1:26.04.23	all	optional
-python3-gi	3.56.2-1	amd64	optional
-python3-httplib2	0.22.0-1ubuntu0.1	all	optional
-python3-idna	3.11-1ubuntu0.1	all	optional
-python3-inflect	7.5.0-1build1	all	optional
-python3-jaraco.context	6.0.1-2	all	optional
-python3-jaraco.functools	4.1.0-1build1	all	optional
-python3-jaraco.text	4.0.0-1build1	all	optional
-python3-jinja2	3.1.6-1build1	all	optional
-python3-json-pointer	2.4-4	all	optional
-python3-jsonpatch	1.32-6	all	optional
-python3-jsonschema	4.19.2-6ubuntu2	all	optional
-python3-jsonschema-specifications	2023.12.1-4	all	optional
-python3-jwt	2.10.1-4ubuntu1	all	optional
-python3-launchpadlib	2.1.0-1build1	all	optional
-python3-lazr.restfulclient	0.14.6-3build1	all	optional
-python3-lazr.uri	1.0.6-7build1	all	optional
-python3-linkify-it	2.0.3-1ubuntu3	all	optional
-python3-markdown-it	3.0.0-3build1	all	optional
-python3-markupsafe	3.0.3-1build1	amd64	optional
-python3-mdurl	0.1.2-1build1	all	optional
-python3-minimal	3.14.3-0ubuntu2	amd64	optional
-python3-more-itertools	10.8.0-1build1	all	optional
-python3-netaddr	1.3.0-1build1	all	optional
-python3-netplan	1.2-1ubuntu5	amd64	optional
-python3-oauthlib	3.3.1-1build1	all	optional
-python3-passlib	1.9.3-1ubuntu1	all	optional
-python3-pkg-resources	78.1.1-0.1build1	all	optional
-python3-problem-report	2.34.1-0ubuntu0.1	all	optional
-python3-pygments	2.19.2+dfsg-1	all	optional
-python3-pyparsing	3.3.2-2	all	optional
-python3-referencing	0.36.2-1ubuntu2	all	optional
-python3-requests	2.32.5+dfsg-1ubuntu1	all	optional
-python3-rich	13.9.4-1.2	all	optional
-python3-rpds-py	0.27.1-2ubuntu3	amd64	optional
-python3-serial	3.5-2build1	all	optional
-python3-setuptools	78.1.1-0.1build1	all	optional
-python3-software-properties	0.120.1	all	optional
-python3-systemd	235-1build9	amd64	optional
-python3-typeguard	4.4.4-2	all	optional
-python3-typing-extensions	4.15.0-2	all	optional
-python3-uc-micro	1.0.3-1build1	all	optional
-python3-update-manager	1:26.04.5	all	optional
-python3-urllib3	2.6.3-1ubuntu1.1	all	optional
-python3-wadllib	2.0.0-3	all	optional
-python3-xkit	0.5.0ubuntu8	all	optional
-python3-yaml	6.0.3-1build1	amd64	optional
-python3-zipp	3.23.0-1build1	all	optional
-python3.14	3.14.4-1ubuntu0.2	amd64	optional
-python3.14-minimal	3.14.4-1ubuntu0.2	amd64	optional
-readline-common	8.3-4	all	optional
-rpcsvc-proto	1.4.3-1build1	amd64	optional
-rust-coreutils	0.8.0-0ubuntu3	amd64	required
-screen	4.9.1-3ubuntu2	amd64	standard
-sed	4.9-2ubuntu1	amd64	required
-sensible-utils	0.0.26build1	all	required
-sg3-utils	1.48-3ubuntu3.1	amd64	optional
-sg3-utils-udev	1.48-3ubuntu3.1	all	optional
-sgml-base	1.31+nmu1build1	all	optional
-shared-mime-info	2.4-5build3	amd64	optional
-snapd	2.76.3+ubuntu26.04	amd64	optional
-software-properties-common	0.120.1	all	optional
-squashfs-tools	1:4.7.5-1	amd64	optional
-ssh-import-id	5.11-0ubuntu4	all	optional
-sudo	1.9.17p2-1ubuntu3.1	amd64	optional
-sudo-common	1.2ubuntu	all	optional
-sudo-rs	0.2.13-0ubuntu1.2	amd64	optional
-systemd	259.5-0ubuntu3.4	amd64	important
-systemd-cryptsetup	259.5-0ubuntu3.4	amd64	important
-systemd-hwe-hwdb	259.5.3ubuntu	all	optional
-systemd-resolved	259.5-0ubuntu3.4	amd64	important
-systemd-sysv	259.5-0ubuntu3.4	amd64	important
-sysvinit-utils	3.15-5ubuntu1	amd64	required
-tar	1.35+dfsg-4ubuntu0.4	amd64	required
-thermald	2.5.11-0ubuntu1	amd64	optional
-thin-provisioning-tools	1.1.0-4ubuntu2	amd64	optional
-tzdata	2026c-0ubuntu0.26.04.1	all	required
-ubuntu-drivers-common	1:0.10.9	amd64	optional
-ubuntu-kernel-accessories	1.570.3	amd64	optional
-ubuntu-keyring	2023.11.28.1build1	all	important
-ubuntu-release-upgrader-core	1:26.04.23	all	optional
-ubuntu-server-minimal	1.570.3	amd64	optional
-ucf	3.0052ubuntu1	all	standard
-udev	259.5-0ubuntu3.4	amd64	important
-unattended-upgrades	2.12ubuntu9	all	optional
-unminimize	0.5build1	amd64	optional
-upower	1.91.1-1	amd64	optional
-usb.ids	2025.12.13-1	all	optional
-usbmuxd	1.1.1-7	amd64	optional
-usbutils	1:019-1	amd64	optional
-util-linux	2.41.3-3ubuntu2.2	amd64	required
-wget	1.25.0-2ubuntu4.4	amd64	standard
-wireless-regdb	2026.05.30-0ubuntu1~26.04.1	all	optional
-xauth	1:1.1.2-1.1build1	amd64	optional
-xdg-user-dirs	0.19-1	amd64	optional
-xfsprogs	6.18.0-3	amd64	optional
-xkb-data	2.46-2	all	optional
-xml-core	0.19build1	all	optional
-xz-utils	5.8.3-1	amd64	standard
-zlib1g	1:1.3.dfsg+really1.3.1-1ubuntu3.1	amd64	required
-zstd	1.5.7+dfsg-3	amd64	optional
+3cpio	0.14.0-1ubuntu1	amd64	optional	713
+adduser	3.153ubuntu1	all	important	437
+amd64-microcode	3.20251202.1ubuntu2	amd64	standard	885
+apparmor	5.0.2-0ubuntu1~26.04.1	amd64	optional	2456
+apport	2.34.1-0ubuntu0.1	all	optional	640
+apport-core-dump-handler	2.34.1-0ubuntu0.1	all	optional	28
+apport-symptoms	0.25build1	all	optional	60
+appstream	1.1.2-1	amd64	optional	352
+apt	3.2.0	amd64	important	4398
+base-files	14ubuntu6.2	amd64	required	440
+base-passwd	3.6.8	amd64	required	277
+bash	5.3-2ubuntu1	amd64	required	2020
+bash-completion	1:2.16.0-8build1	all	standard	1952
+bcache-tools	1.0.8-5ubuntu1	amd64	optional	109
+binutils	2.46-3ubuntu2	amd64	optional	1150
+binutils-common	2.46-3ubuntu2	amd64	optional	532
+binutils-x86-64-linux-gnu	2.46-3ubuntu2	amd64	optional	6109
+bpfcc-tools	0.35.0+ds-1ubuntu2	all	optional	2928
+bpftool	7.7.0+7.0.0-34.34	amd64	optional	2498
+bpftrace	0.25.0-1ubuntu1	amd64	optional	12478
+bsdextrautils	2.41.3-3ubuntu2.2	amd64	optional	285
+bsdutils	1:2.41.3-3ubuntu2.2	amd64	standard	251
+btrfs-progs	6.17.1-1build1	amd64	optional	5073
+busybox-initramfs	1:1.37.0-7ubuntu1	amd64	optional	351
+busybox-static	1:1.37.0-7ubuntu1	amd64	optional	2188
+ca-certificates	20260601~26.04.1	all	standard	333
+chrony	4.8-2ubuntu1	amd64	optional	692
+cloud-guest-utils	0.33-1build1	all	optional	61
+cloud-init	26.1-0ubuntu3~26.04.1	all	optional	15
+cloud-init-base	26.1-0ubuntu3~26.04.1	all	optional	3012
+console-setup	1.237ubuntu3.1	all	optional	407
+console-setup-linux	1.237ubuntu3.1	all	optional	7291
+coreutils	9.5-1ubuntu2+0.0.0~ubuntu25	all	required	10
+coreutils-from-uutils	0.0.0~ubuntu25	all	required	237
+crash	9.0.1+~16.3-1ubuntu1	amd64	optional	14891
+cryptsetup	2:2.8.4-1ubuntu4	amd64	optional	464
+cryptsetup-bin	2:2.8.4-1ubuntu4	amd64	optional	652
+curl	8.18.0-1ubuntu2.7	amd64	optional	511
+dash	0.5.12-12ubuntu3	amd64	required	200
+dbus	1.16.2-2ubuntu4	amd64	standard	141
+dbus-bin	1.16.2-2ubuntu4	amd64	optional	193
+dbus-daemon	1.16.2-2ubuntu4	amd64	optional	343
+dbus-session-bus-common	1.16.2-2ubuntu4	all	optional	83
+dbus-system-bus-common	1.16.2-2ubuntu4	all	optional	94
+dbus-user-session	1.16.2-2ubuntu4	amd64	optional	87
+debconf	1.5.92	all	required	507
+debianutils	5.23.2build1	amd64	required	229
+dhcpcd-base	1:10.3.0-7	amd64	important	537
+diffutils	1:3.12-1ubuntu0.1	amd64	required	448
+dirmngr	2.4.8-4ubuntu3.1	amd64	optional	719
+distro-info-data	0.72-0ubuntu0.26.04.1	all	optional	20
+dmeventd	2:1.02.205-2ubuntu3	amd64	optional	236
+dmsetup	2:1.02.205-2ubuntu3	amd64	optional	254
+dpkg	1.23.7ubuntu1	amd64	required	6206
+dracut	110-11ubuntu0.1	all	optional	45
+dracut-core	110-11ubuntu0.1	amd64	optional	1279
+dracut-install	110-11ubuntu0.1	amd64	optional	108
+e2fsprogs	1.47.2-3ubuntu4	amd64	required	1530
+eatmydata	131-2build1	all	optional	21
+ethtool	1:6.19-1	amd64	optional	1080
+fdisk	2.41.3-3ubuntu2.2	amd64	important	402
+file	1:5.46-5build2	amd64	standard	60
+finalrd	9build2	all	optional	29
+findutils	4.10.0-3build2	amd64	required	572
+firmware-sof-signed	2025.12.2-1	all	optional	44233
+fuse3	3.18.2-1	amd64	optional	97
+gawk	1:5.3.2-1ubuntu1.1	amd64	optional	1924
+gcc-16-base	16-20260322-1ubuntu1	amd64	required	105
+gdisk	1.0.10-2build1	amd64	optional	808
+gettext-base	0.23.2-1	amd64	standard	276
+gir1.2-girepository-3.0	2.88.0-1ubuntu0.1	amd64	optional	108
+gir1.2-glib-2.0	2.88.0-1ubuntu0.1	amd64	optional	746
+gir1.2-packagekitglib-1.0	1.3.4-3ubuntu1.2	amd64	optional	111
+gnu-coreutils	9.7-3ubuntu2.1	amd64	required	6916
+gnupg	2.4.8-4ubuntu3.1	all	optional	474
+gnupg-l10n	2.4.8-4ubuntu3.1	all	optional	404
+gnupg-utils	2.4.8-4ubuntu3.1	amd64	optional	409
+gpg	2.4.8-4ubuntu3.1	amd64	optional	1431
+gpg-agent	2.4.8-4ubuntu3.1	amd64	optional	651
+gpg-wks-client	2.4.8-4ubuntu3.1	amd64	optional	182
+gpgconf	2.4.8-4ubuntu3.1	amd64	optional	263
+gpgsm	2.4.8-4ubuntu3.1	amd64	optional	568
+gpgv	2.4.8-4ubuntu3.1	amd64	important	331
+grep	3.12-1	amd64	required	364
+groff-base	1.23.0-10	amd64	important	3734
+grub-gfxpayload-lists	0.7build3	amd64	optional	21
+grub-pc	2.14-2ubuntu2.1	amd64	optional	500
+grub-pc-bin	2.14-2ubuntu2.1	amd64	optional	3768
+grub2-common	2.14-2ubuntu2.1	amd64	optional	16452
+gzip	1.14-1~exp2ubuntu1.1	amd64	required	212
+hostname	3.25build1	amd64	required	50
+hwctl	0.11.0-0ubuntu1	amd64	optional	1583
+hwdata	0.394-1build1	all	optional	15
+ieee-data	20240722build1	all	optional	14892
+init-system-helpers	1.69	all	required	133
+initramfs-tools-bin	0.151ubuntu1	amd64	optional	81
+initramfs-tools-core	0.151ubuntu1	all	optional	204
+intel-microcode	3.20260210.1ubuntu2	amd64	standard	20949
+iproute2	6.19.0-1ubuntu1.1	amd64	important	3257
+iputils-ping	3:20250605-1ubuntu1	amd64	important	193
+iso-codes	4.20.1-1	all	optional	24021
+iucode-tool	2.3.1-3build2	amd64	optional	100
+kbd	2.7.1-2ubuntu2	amd64	optional	1284
+kdump-tools	1:1.10.7ubuntu3	amd64	optional	133
+kexec-tools	1:2.0.32-3ubuntu1	amd64	optional	308
+keyboard-configuration	1.237ubuntu3.1	all	optional	813
+klibc-utils	2.0.14-1ubuntu2	amd64	optional	497
+kmod	34.2-2ubuntu2	amd64	important	264
+kpartx	0.14.3-2ubuntu1	amd64	optional	76
+krb5-locales	1.22.1-2ubuntu4.1	all	optional	104
+less	668-1build1	amd64	important	373
+libacl1	2.3.2-2	amd64	required	74
+libaio1t64	0.3.113-8build1	amd64	optional	38
+libapparmor1	5.0.2-0ubuntu1~26.04.1	amd64	optional	122
+libappstream5	1.1.2-1	amd64	optional	759
+libapt-pkg7.0	3.2.0	amd64	important	3699
+libassuan9	3.0.2-2build1	amd64	optional	114
+libatomic1	16-20260322-1ubuntu1	amd64	optional	49
+libattr1	1:2.5.2-4ubuntu0.1	amd64	optional	61
+libaudit-common	1:4.1.2-1build1	all	required	17
+libaudit1	1:4.1.2-1build1	amd64	required	195
+libbinutils	2.46-3ubuntu2	amd64	optional	2416
+libblkid1	2.41.3-3ubuntu2.2	amd64	optional	299
+libbpf1	1:1.6.3-1ubuntu1	amd64	optional	459
+libbpfcc	0.35.0+ds-1ubuntu2	amd64	optional	2662
+libbrotli1	1.2.0-3build1	amd64	optional	886
+libbsd0	0.12.2-2build2	amd64	required	129
+libbz2-1.0	1.0.8-6ubuntu0.1	amd64	important	98
+libc-bin	2.43-2ubuntu2.4	amd64	required	2253
+libc-dev-bin	2.43-2ubuntu2.4	amd64	optional	114
+libc-gconv-modules-extra	2.43-2ubuntu2.4	amd64	optional	8079
+libc6	2.43-2ubuntu2.4	amd64	optional	5798
+libc6-dev	2.43-2ubuntu2.4	amd64	optional	13792
+libcap-ng0	0.8.5-4build5	amd64	required	59
+libcap2	1:2.75-10ubuntu2	amd64	optional	93
+libcap2-bin	1:2.75-10ubuntu2	amd64	important	133
+libcbor0.10	0.10.2-2ubuntu3	amd64	optional	85
+libclang-cpp21	1:21.1.8-6ubuntu1	amd64	optional	58935
+libclang1-21	1:21.1.8-6ubuntu1	amd64	optional	31988
+libcom-err2	1.47.2-3ubuntu4	amd64	required	66
+libcrypt1	1:4.5.1-1	amd64	required	244
+libcryptsetup12	2:2.8.4-1ubuntu4	amd64	optional	660
+libctf-nobfd0	2.46-3ubuntu2	amd64	optional	323
+libctf0	2.46-3ubuntu2	amd64	optional	244
+libcurl3t64-gnutls	8.18.0-1ubuntu2.7	amd64	optional	999
+libcurl4t64	8.18.0-1ubuntu2.7	amd64	optional	1024
+libdb5.3t64	5.3.28+dfsg2-10ubuntu1	amd64	required	1817
+libdbus-1-3	1.16.2-2ubuntu4	amd64	optional	420
+libdebconfclient0	0.280ubuntu1	amd64	required	39
+libdebuginfod-common	0.194-4	all	optional	49
+libdebuginfod1t64	0.194-4	amd64	optional	78
+libdevmapper-event1.02.1	2:1.02.205-2ubuntu3	amd64	optional	57
+libdevmapper1.02.1	2:1.02.205-2ubuntu3	amd64	optional	484
+libdrm-common	2.4.131-1	all	optional	41
+libdrm2	2.4.131-1	amd64	optional	119
+libduktape207	2.7.0+tests-0ubuntu4	amd64	optional	324
+libdw1t64	0.194-4	amd64	optional	831
+libeatmydata1	131-2build1	amd64	optional	35
+libedit2	3.1-20251016-1	amd64	optional	258
+libefiboot1t64	39-2	amd64	optional	122
+libefivar1t64	39-2	amd64	optional	218
+libelf1t64	0.194-4	amd64	optional	208
+libestr0	0.1.11-2build1	amd64	optional	34
+libevdev2	1.13.6+dfsg-1	amd64	optional	142
+libexpat1	2.7.4-1ubuntu0.2	amd64	optional	420
+libext2fs2t64	1.47.2-3ubuntu4	amd64	required	551
+libfastjson4	1.2304.0-2build1	amd64	optional	69
+libfdisk1	2.41.3-3ubuntu2.2	amd64	optional	429
+libffi8	3.5.2-4	amd64	optional	87
+libfido2-1	1.16.0-2build1	amd64	optional	246
+libfreetype6	2.14.2+dfsg-1ubuntu0.1	amd64	optional	906
+libfuse3-4	3.18.2-1	amd64	optional	313
+libfyaml0	0.9.4-1	amd64	optional	797
+libgcc-s1	16-20260322-1ubuntu1	amd64	required	201
+libgcrypt20	1.12.0-2ubuntu1.1	amd64	optional	1847
+libgdbm-compat4t64	1.26-1build1	amd64	optional	35
+libgdbm6t64	1.26-1build1	amd64	optional	97
+libgirepository-2.0-0	2.88.0-1ubuntu0.1	amd64	optional	258
+libglib2.0-0t64	2.88.0-1ubuntu0.1	amd64	optional	4330
+libglib2.0-bin	2.88.0-1ubuntu0.1	amd64	optional	364
+libglib2.0-data	2.88.0-1ubuntu0.1	all	optional	108
+libgmp10	2:6.3.0+dfsg-5ubuntu2	amd64	required	552
+libgnutls30t64	3.8.12-2ubuntu1.1	amd64	optional	2448
+libgpg-error0	1.58-2	amd64	important	219
+libgpm2	1.20.7-12build1	amd64	optional	44
+libgprofng0	2.46-3ubuntu2	amd64	optional	4066
+libgssapi-krb5-2	1.22.1-2ubuntu4.1	amd64	optional	441
+libgstreamer1.0-0	1.28.2-1	amd64	optional	3624
+libgudev-1.0-0	1:238-7build1	amd64	optional	69
+libhogweed6t64	3.10.2-1	amd64	optional	350
+libicu78	78.2-2ubuntu1	amd64	optional	38705
+libidn2-0	2.3.8-4build1	amd64	optional	228
+libimobiledevice-1.0-6	1.4.0-1build1	amd64	optional	320
+libimobiledevice-glue-1.0-0	1.3.2-2build1	amd64	optional	102
+libinih1	61-1ubuntu1	amd64	optional	31
+libintl-perl	1.37-1	all	optional	4301
+libintl-xs-perl	1.37-1	amd64	optional	55
+libisns0t64	0.101-2.1ubuntu0.1	amd64	optional	498
+libjansson4	2.14-2build4	amd64	optional	95
+libjs-sphinxdoc	8.2.3-12	all	optional	83
+libjson-c5	0.18+ds-3	amd64	optional	103
+libk5crypto3	1.22.1-2ubuntu4.1	amd64	optional	257
+libkeyutils1	1.6.3-6ubuntu3	amd64	optional	42
+libklibc	2.0.14-1ubuntu2	amd64	optional	103
+libkmod2	34.2-2ubuntu2	amd64	optional	146
+libkrb5-3	1.22.1-2ubuntu4.1	amd64	optional	1050
+libkrb5support0	1.22.1-2ubuntu4.1	amd64	optional	136
+libksba8	1.6.7-2build1	amd64	optional	311
+libldap-common	2.6.10+dfsg-1ubuntu5	all	optional	99
+libldap2	2.6.10+dfsg-1ubuntu5	amd64	optional	568
+libllvm21	1:21.1.8-6ubuntu1	amd64	optional	135358
+liblocale-gettext-perl	1.07-8	amd64	required	53
+liblvm2cmd2.03	2.03.31-2ubuntu3	amd64	optional	3049
+liblz4-1	1.10.0-8	amd64	important	185
+liblzma5	5.8.3-1	amd64	required	473
+liblzo2-2	2.10-3build2	amd64	optional	177
+libmagic-mgc	1:5.46-5build2	amd64	optional	10135
+libmagic1t64	1:5.46-5build2	amd64	optional	225
+libmd0	1.1.0-2build4	amd64	required	79
+libmnl0	1.0.5-3build1	amd64	optional	47
+libmodule-find-perl	0.17-1	all	optional	29
+libmount1	2.41.3-3ubuntu2.2	amd64	optional	402
+libmpathcmd0	0.14.3-2ubuntu1	amd64	optional	35
+libmpathpersist0	0.14.3-2ubuntu1	amd64	optional	64
+libmpfr6	4.2.2-3	amd64	optional	1215
+libmultipath0	0.14.3-2ubuntu1	amd64	optional	500
+libncursesw6	6.6+20251231-1	amd64	required	426
+libnetplan1	1.2-1ubuntu5	amd64	optional	383
+libnettle8t64	3.10.2-1	amd64	optional	438
+libnghttp2-14	1.68.0-2ubuntu0.2	amd64	optional	196
+libnl-3-200	3.12.0-2	amd64	optional	171
+libnl-genl-3-200	3.12.0-2	amd64	optional	52
+libnpth0t64	1.8-3build1	amd64	optional	43
+libnss-systemd	259.5-0ubuntu3.4	amd64	standard	516
+libnuma1	2.0.19-1build1	amd64	optional	71
+libopeniscsiusr	2.1.11-3ubuntu3	amd64	optional	159
+libp11-kit0	0.26.2-2	amd64	optional	1931
+libpackagekit-glib2-18	1.3.4-3ubuntu1.2	amd64	optional	438
+libpam-cap	1:2.75-10ubuntu2	amd64	optional	56
+libpam-modules	1.7.0-5ubuntu3.2	amd64	required	1050
+libpam-modules-bin	1.7.0-5ubuntu3.2	amd64	required	247
+libpam-runtime	1.7.0-5ubuntu3.2	all	required	524
+libpam-systemd	259.5-0ubuntu3.4	amd64	standard	730
+libpam0g	1.7.0-5ubuntu3.2	amd64	optional	207
+libpci3	1:3.14.0-1build2	amd64	optional	117
+libpcre2-8-0	10.46-1build1	amd64	required	708
+libperl5.40	5.40.1-7ubuntu0.3	amd64	optional	29327
+libplist-2.0-4	2.7.0+git20250820-1build1	amd64	optional	128
+libpng16-16t64	1.6.57-1	amd64	optional	346
+libpolkit-agent-1-0	127-2ubuntu1.1	amd64	optional	70
+libpolkit-gobject-1-0	127-2ubuntu1.1	amd64	optional	161
+libpopt0	1.19+dfsg-2build1	amd64	optional	124
+libproc-processtable-perl	0.637-1	amd64	optional	107
+libproc2-0	2:4.0.4-9ubuntu1	amd64	required	241
+libpsl5t64	0.21.2-1.1build2	amd64	optional	108
+libpython3-stdlib	3.14.3-0ubuntu2	amd64	optional	26
+libpython3.14	3.14.4-1ubuntu0.2	amd64	optional	8131
+libpython3.14-minimal	3.14.4-1ubuntu0.2	amd64	optional	5643
+libpython3.14-stdlib	3.14.4-1ubuntu0.2	amd64	optional	10120
+libreadline8t64	8.3-4	amd64	optional	494
+librtmp1	2.4+20151223.gitfa8646d.1-3	amd64	optional	141
+libsasl2-2	2.1.28+dfsg1-9ubuntu3	amd64	optional	152
+libsasl2-modules	2.1.28+dfsg1-9ubuntu3	amd64	optional	294
+libsasl2-modules-db	2.1.28+dfsg1-9ubuntu3	amd64	optional	75
+libseccomp2	2.6.0-2ubuntu5	amd64	important	200
+libselinux1	3.9-4build1	amd64	required	228
+libsemanage-common	3.9-1build1	all	required	20
+libsemanage2	3.9-1build1	amd64	required	305
+libsepol2	3.9-2	amd64	required	823
+libsframe3	2.46-3ubuntu2	amd64	optional	140
+libsgutils2-1.48	1.48-3ubuntu3.1	amd64	optional	355
+libslang2	2.3.3-5build1	amd64	optional	2392
+libsmartcols1	2.41.3-3ubuntu2.2	amd64	optional	218
+libsnappy1v5	1.2.2-2	amd64	optional	93
+libsodium23	1.0.18-2	amd64	optional	413
+libsort-naturally-perl	1.03-4	all	optional	40
+libsqlite3-0	3.46.1-9ubuntu0.3	amd64	optional	1784
+libss2	1.47.2-3ubuntu4	amd64	required	78
+libssh2-1t64	1.11.1-1ubuntu0.26.04.4	amd64	optional	457
+libssl3t64	3.5.5-1ubuntu3.5	amd64	optional	7982
+libstdc++6	16-20260322-1ubuntu1	amd64	important	3256
+libstemmer0d	3.0.1-1	amd64	optional	914
+libsystemd-shared	259.5-0ubuntu3.4	amd64	optional	7383
+libsystemd0	259.5-0ubuntu3.4	amd64	required	1209
+libtasn1-6	4.21.0-2	amd64	optional	127
+libterm-readkey-perl	2.38-2build5	amd64	optional	71
+libtext-charwidth-perl	0.04-11build4	amd64	required	42
+libtext-wrapi18n-perl	0.06-10	all	required	24
+libtinfo6	6.6+20251231-1	amd64	required	569
+libtirpc-common	1.3.7-0.1	all	optional	27
+libtirpc3t64	1.3.7-0.1	amd64	optional	219
+libtraceevent1	1:1.8.7-1	amd64	optional	151
+libuchardet0	0.0.8-2	amd64	optional	207
+libudev1	259.5-0ubuntu3.4	amd64	required	354
+libunistring5	1.3-2build1	amd64	optional	2081
+libupower-glib3	1.91.1-1	amd64	optional	174
+liburcu8t64	0.15.6-1	amd64	optional	340
+libusb-1.0-0	2:1.0.29-2build1	amd64	optional	151
+libusbmuxd-2.0-7	2.1.1-1	amd64	optional	57
+libuuid1	2.41.3-3ubuntu2.2	amd64	optional	91
+libwrap0	7.6.q-36build2	amd64	optional	107
+libx11-6	2:1.8.13-1	amd64	optional	1381
+libx11-data	2:1.8.13-1	all	optional	1343
+libxau6	1:1.0.11-1build2	amd64	optional	33
+libxcb1	1.17.0-2ubuntu1	amd64	optional	205
+libxdmcp6	1:1.1.5-2	amd64	optional	41
+libxext6	2:1.3.4-1build3	amd64	optional	103
+libxml2-16	2.15.2+dfsg-0.1ubuntu0.2	amd64	optional	1565
+libxmlb2	0.3.24-2	amd64	optional	192
+libxmuu1	2:1.1.3-4	amd64	optional	39
+libxtables12	1.8.11-2ubuntu3	amd64	optional	104
+libxxhash0	0.8.3-2build1	amd64	important	90
+libyaml-0-2	0.2.5-2build3	amd64	optional	148
+libzstd1	1.5.7+dfsg-3	amd64	required	802
+linux-base	4.15ubuntu5	all	optional	154
+linux-firmware	20260319.git217ca6e4.1ubuntu	all	optional	8
+linux-firmware-amd-graphics	20260319.git217ca6e4-0ubuntu3.1	all	optional	28802
+linux-firmware-amd-misc	20260319.git217ca6e4-0ubuntu1.1	all	optional	560
+linux-firmware-broadcom-wireless	20260319.git217ca6e4-0ubuntu1.1	all	optional	10926
+linux-firmware-intel-graphics	20260319.git217ca6e4-0ubuntu2.1	all	optional	21430
+linux-firmware-intel-misc	20260319.git217ca6e4-0ubuntu1.2	all	optional	9895
+linux-firmware-intel-wireless	20260319.git217ca6e4-0ubuntu2.1	all	optional	99632
+linux-firmware-marvell-prestera	20260319.git217ca6e4-0ubuntu1.2	all	optional	32121
+linux-firmware-marvell-wireless	20260319.git217ca6e4-0ubuntu1.1	all	optional	7238
+linux-firmware-mediatek	20260319.git217ca6e4-0ubuntu1.2	all	optional	27185
+linux-firmware-mellanox-spectrum	20260319.git217ca6e4-0ubuntu1.1	all	optional	60414
+linux-firmware-misc	20260319.git217ca6e4-0ubuntu2.2	all	optional	31597
+linux-firmware-netronome	20260319.git217ca6e4-0ubuntu1.1	all	optional	5626
+linux-firmware-nvidia-graphics	20260319.git217ca6e4-0ubuntu1.1	all	optional	106204
+linux-firmware-qlogic	20260319.git217ca6e4-0ubuntu1.1	all	optional	6996
+linux-firmware-qualcomm-graphics	20260319.git217ca6e4-0ubuntu1.1	all	optional	10757
+linux-firmware-qualcomm-misc	20260319.git217ca6e4-0ubuntu2.1	all	optional	163392
+linux-firmware-qualcomm-wireless	20260319.git217ca6e4-0ubuntu1.2	all	optional	47757
+linux-firmware-realtek	20260319.git217ca6e4-0ubuntu1.2	all	optional	7081
+linux-generic	7.0.0-34.34	amd64	optional	13
+linux-headers-7.0.0-30	7.0.0-30.30	all	optional	92448
+linux-headers-7.0.0-30-generic	7.0.0-30.30	amd64	optional	31682
+linux-headers-7.0.0-34	7.0.0-34.34	all	optional	92489
+linux-headers-7.0.0-34-generic	7.0.0-34.34	amd64	optional	31712
+linux-headers-generic	7.0.0-34.34	amd64	optional	13
+linux-image-7.0.0-34-generic	7.0.0-34.34	amd64	optional	16920
+linux-image-generic	7.0.0-34.34	amd64	optional	13
+linux-image-unsigned-7.0.0-30-generic	7.0.0-30.30	amd64	optional	17107
+linux-libc-dev	7.0.0-34.34	amd64	optional	7922
+linux-main-modules-zfs-7.0.0-30-generic	7.0.0-30.30	amd64	optional	2390
+linux-main-modules-zfs-7.0.0-34-generic	7.0.0-34.34	amd64	optional	2390
+linux-modules-7.0.0-30-generic	7.0.0-30.30	amd64	optional	163345
+linux-modules-7.0.0-34-generic	7.0.0-34.34	amd64	optional	163400
+linux-perf	7.0.0-34.34	amd64	optional	35934
+linux-sysctl-defaults	4.15ubuntu5	all	important	19
+linux-tools-7.0.0-30	7.0.0-30.30	amd64	optional	4418
+linux-tools-7.0.0-30-generic	7.0.0-30.30	amd64	optional	209
+linux-tools-7.0.0-34	7.0.0-34.34	amd64	optional	4447
+linux-tools-7.0.0-34-generic	7.0.0-34.34	amd64	optional	237
+linux-tools-common	7.0.0-34.34	all	optional	289
+locales	2.43-2ubuntu2.4	all	standard	15802
+login	1:4.16.0-2+really2.41.3-3ubuntu2.2	amd64	required	197
+login.defs	1:4.17.4-2ubuntu3	all	required	103
+logrotate	3.22.0-1build1	amd64	important	145
+logsave	1.47.2-3ubuntu4	amd64	required	60
+lsb-base	11.6build1	all	optional	12
+lsb-release	12.1-2build1	all	optional	18
+lvm2	2.03.31-2ubuntu3	amd64	optional	4035
+lxd-installer	14ubuntu0	all	optional	25
+makedumpfile	1:1.7.7-1	amd64	optional	466
+manpages	6.17-1	all	standard	1663
+manpages-dev	6.17-1	all	optional	4147
+mawk	1.3.4.20260129-1	amd64	required	286
+mdadm	4.5-5ubuntu1	amd64	optional	1202
+media-types	14.0.0build1	all	standard	99
+mokutil	0.7.2-2	amd64	optional	82
+mount	2.41.3-3ubuntu2.2	amd64	required	357
+multipath-tools	0.14.3-2ubuntu1	amd64	optional	699
+nano	8.7.1-1ubuntu0.1	amd64	important	872
+ncurses-base	6.6+20251231-1	all	required	393
+ncurses-bin	6.6+20251231-1	amd64	required	663
+ncurses-term	6.6+20251231-1	all	standard	4421
+needrestart	3.11-1ubuntu2	all	optional	540
+netbase	6.5build1	all	important	35
+netcat-openbsd	1.234-1	amd64	important	105
+netplan-generator	1.2-1ubuntu5	amd64	optional	317
+netplan.io	1.2-1ubuntu5	amd64	optional	340
+networkd-dispatcher	2.2.4-1.1ubuntu1	all	optional	67
+open-iscsi	2.1.11-3ubuntu3	amd64	optional	1170
+openssh-client	1:10.2p1-2ubuntu3.6	amd64	standard	3673
+openssh-server	1:10.2p1-2ubuntu3.6	amd64	optional	2835
+openssh-sftp-server	1:10.2p1-2ubuntu3.6	amd64	optional	101
+openssl	3.5.5-1ubuntu3.5	amd64	optional	2523
+openssl-provider-legacy	3.5.5-1ubuntu3.5	amd64	optional	423
+os-prober	1.84ubuntu1	amd64	optional	85
+packagekit	1.3.4-3ubuntu1.2	amd64	optional	1776
+passwd	1:4.17.4-2ubuntu3	amd64	required	4348
+pci.ids	0.0~2026.02.12-1	all	optional	1561
+pciutils	1:3.14.0-1build2	amd64	standard	256
+perl	5.40.1-7ubuntu0.3	amd64	standard	836
+perl-base	5.40.1-7ubuntu0.3	amd64	required	7955
+perl-modules-5.40	5.40.1-7ubuntu0.3	all	optional	19985
+pinentry-curses	1.3.2-3ubuntu1	amd64	optional	100
+pnp.ids	0.394-1build1	all	optional	73
+polkitd	127-2ubuntu1.1	amd64	optional	540
+procps	2:4.0.4-9ubuntu1	amd64	required	1800
+publicsuffix	20260129.1928-1	all	optional	602
+python-apt-common	3.1.0ubuntu1	all	optional	144
+python-babel-localedata	2.17.0-2	all	optional	30117
+python3	3.14.3-0ubuntu2	amd64	optional	80
+python3-apport	2.34.1-0ubuntu0.1	all	optional	493
+python3-apt	3.1.0ubuntu1	amd64	optional	686
+python3-attr	25.4.0-1build1	all	optional	263
+python3-autocommand	2.2.2-4	all	optional	61
+python3-babel	2.17.0-2	all	optional	504
+python3-bcrypt	5.0.0-3build1	amd64	optional	541
+python3-blinker	1.9.0-2build1	all	optional	43
+python3-bpfcc	0.35.0+ds-1ubuntu2	all	optional	223
+python3-certifi	2026.1.4+ds-1	all	optional	42
+python3-cffi-backend	2.0.0-3build1	amd64	optional	242
+python3-chardet	5.2.0+dfsg-2build1	all	optional	1141
+python3-click	8.2.0+0.really.8.1.8-1build1	all	optional	374
+python3-configobj	5.0.9-1build1	all	optional	161
+python3-cryptography	46.0.5-1ubuntu2.2	amd64	optional	4358
+python3-dbus	1.4.0-1build2	amd64	optional	413
+python3-debconf	1.5.92	all	optional	19
+python3-distro	1.9.0-1build1	all	optional	79
+python3-distro-info	1.15	all	optional	42
+python3-distupgrade	1:26.04.23	all	optional	489
+python3-gi	3.56.2-1	amd64	optional	757
+python3-httplib2	0.22.0-1ubuntu0.1	all	optional	134
+python3-idna	3.11-1ubuntu0.1	all	optional	373
+python3-inflect	7.5.0-1build1	all	optional	148
+python3-jaraco.context	6.0.1-2	all	optional	34
+python3-jaraco.functools	4.1.0-1build1	all	optional	47
+python3-jaraco.text	4.0.0-1build1	all	optional	47
+python3-jinja2	3.1.6-1build1	all	optional	531
+python3-json-pointer	2.4-4	all	optional	45
+python3-jsonpatch	1.32-6	all	optional	59
+python3-jsonschema	4.19.2-6ubuntu2	all	optional	478
+python3-jsonschema-specifications	2023.12.1-4	all	optional	81
+python3-jwt	2.10.1-4ubuntu1	all	optional	105
+python3-launchpadlib	2.1.0-1build1	all	optional	1769
+python3-lazr.restfulclient	0.14.6-3build1	all	optional	178
+python3-lazr.uri	1.0.6-7build1	all	optional	74
+python3-linkify-it	2.0.3-1ubuntu3	all	optional	78
+python3-markdown-it	3.0.0-3build1	all	optional	280
+python3-markupsafe	3.0.3-1build1	amd64	optional	52
+python3-mdurl	0.1.2-1build1	all	optional	42
+python3-minimal	3.14.3-0ubuntu2	amd64	optional	110
+python3-more-itertools	10.8.0-1build1	all	optional	308
+python3-netaddr	1.3.0-1build1	all	optional	1442
+python3-netplan	1.2-1ubuntu5	amd64	optional	150
+python3-oauthlib	3.3.1-1build1	all	optional	581
+python3-passlib	1.9.3-1ubuntu1	all	optional	4519
+python3-pkg-resources	78.1.1-0.1build1	all	optional	696
+python3-problem-report	2.34.1-0ubuntu0.1	all	optional	55
+python3-pygments	2.19.2+dfsg-1	all	optional	4582
+python3-pyparsing	3.3.2-2	all	optional	485
+python3-referencing	0.36.2-1ubuntu2	all	optional	136
+python3-requests	2.32.5+dfsg-1ubuntu1	all	optional	242
+python3-rich	13.9.4-1.2	all	optional	1053
+python3-rpds-py	0.27.1-2ubuntu3	amd64	optional	789
+python3-serial	3.5-2build1	all	optional	458
+python3-setuptools	78.1.1-0.1build1	all	optional	3897
+python3-software-properties	0.120.1	all	optional	130
+python3-systemd	235-1build9	amd64	optional	223
+python3-typeguard	4.4.4-2	all	optional	165
+python3-typing-extensions	4.15.0-2	all	optional	511
+python3-uc-micro	1.0.3-1build1	all	optional	42
+python3-update-manager	1:26.04.5	all	optional	187
+python3-urllib3	2.6.3-1ubuntu1.1	all	optional	485
+python3-wadllib	2.0.0-3	all	optional	330
+python3-xkit	0.5.0ubuntu8	all	optional	112
+python3-yaml	6.0.3-1build1	amd64	optional	561
+python3-zipp	3.23.0-1build1	all	optional	45
+python3.14	3.14.4-1ubuntu0.2	amd64	optional	913
+python3.14-minimal	3.14.4-1ubuntu0.2	amd64	optional	7395
+readline-common	8.3-4	all	optional	81
+rpcsvc-proto	1.4.3-1build1	amd64	optional	249
+rsyslog	8.2512.0-1ubuntu4.2	amd64	optional	1840
+rust-coreutils	0.8.0-0ubuntu3	amd64	required	15617
+screen	4.9.1-3ubuntu2	amd64	standard	1004
+sed	4.9-2ubuntu1	amd64	required	344
+sensible-utils	0.0.26build1	all	required	66
+sg3-utils	1.48-3ubuntu3.1	amd64	optional	3333
+sg3-utils-udev	1.48-3ubuntu3.1	all	optional	35
+sgml-base	1.31+nmu1build1	all	optional	65
+shared-mime-info	2.4-5build3	amd64	optional	2876
+snapd	2.76.3+ubuntu26.04	amd64	optional	143568
+software-properties-common	0.120.1	all	optional	192
+squashfs-tools	1:4.7.5-1	amd64	optional	599
+ssh-import-id	5.11-0ubuntu4	all	optional	50
+sudo	1.9.17p2-1ubuntu3.1	amd64	optional	3472
+sudo-common	1.2ubuntu	all	optional	26
+sudo-rs	0.2.13-0ubuntu1.2	amd64	optional	2505
+systemd	259.5-0ubuntu3.4	amd64	important	10988
+systemd-cryptsetup	259.5-0ubuntu3.4	amd64	important	504
+systemd-hwe-hwdb	259.5.3ubuntu	all	optional	17
+systemd-resolved	259.5-0ubuntu3.4	amd64	important	868
+systemd-sysv	259.5-0ubuntu3.4	amd64	important	81
+sysvinit-utils	3.15-5ubuntu1	amd64	required	112
+tar	1.35+dfsg-4ubuntu0.4	amd64	required	728
+thermald	2.5.11-0ubuntu1	amd64	optional	591
+thin-provisioning-tools	1.1.0-4ubuntu2	amd64	optional	3382
+tzdata	2026c-0ubuntu0.26.04.1	all	required	1356
+ubuntu-drivers-common	1:0.10.9	amd64	optional	280
+ubuntu-kernel-accessories	1.570.3	amd64	optional	14
+ubuntu-keyring	2023.11.28.1build1	all	important	29
+ubuntu-release-upgrader-core	1:26.04.23	all	optional	256
+ubuntu-server-minimal	1.570.3	amd64	optional	14
+ucf	3.0052ubuntu1	all	standard	148
+udev	259.5-0ubuntu3.4	amd64	important	10382
+unattended-upgrades	2.12ubuntu9	all	optional	448
+unminimize	0.5build1	amd64	optional	16
+upower	1.91.1-1	amd64	optional	500
+usb.ids	2025.12.13-1	all	optional	726
+usbmuxd	1.1.1-7	amd64	optional	124
+usbutils	1:019-1	amd64	optional	306
+util-linux	2.41.3-3ubuntu2.2	amd64	required	2888
+vim	2:9.1.2141-1ubuntu4.9	amd64	optional	4567
+vim-common	2:9.1.2141-1ubuntu4.9	all	important	2272
+vim-runtime	2:9.1.2141-1ubuntu4.9	all	optional	38137
+wget	1.25.0-2ubuntu4.4	amd64	standard	732
+wireless-regdb	2026.05.30-0ubuntu1~26.04.1	all	optional	24
+xauth	1:1.1.2-1.1build1	amd64	optional	73
+xdg-user-dirs	0.19-1	amd64	optional	168
+xfsprogs	6.18.0-3	amd64	optional	3728
+xkb-data	2.46-2	all	optional	4140
+xml-core	0.19build1	all	optional	114
+xz-utils	5.8.3-1	amd64	standard	976
+zlib1g	1:1.3.dfsg+really1.3.1-1ubuntu3.1	amd64	required	169
+zstd	1.5.7+dfsg-3	amd64	optional	1924

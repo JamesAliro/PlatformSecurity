@@ -149,9 +149,11 @@ libedit2
 libefiboot1t64
 libefivar1t64
 libelf1t64
+libestr0
 libevdev2
 libexpat1
 libext2fs2t64
+libfastjson4
 libfdisk1
 libffi8
 libfido2-1
@@ -169,6 +171,7 @@ libglib2.0-data
 libgmp10
 libgnutls30t64
 libgpg-error0
+libgpm2
 libgprofng0
 libgssapi-krb5-2
 libgstreamer1.0-0
@@ -258,6 +261,7 @@ libsgutils2-1.48
 libslang2
 libsmartcols1
 libsnappy1v5
+libsodium23
 libsort-naturally-perl
 libsqlite3-0
 libss2
@@ -487,6 +491,8 @@ upower
 usb.ids
 usbmuxd
 usbutils
+vim-common
+vim-runtime
 wget
 wireless-regdb
 xauth

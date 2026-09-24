@@ -13,6 +13,7 @@ cloud-init-local.service                    enabled enabled
 cloud-init-main.service                     enabled enabled
 cloud-init-network.service                  enabled enabled
 console-setup.service                       enabled enabled
+dmesg.service                               enabled enabled
 e2scrub_reap.service                        enabled enabled
 finalrd.service                             enabled enabled
 getty@.service                              enabled enabled
@@ -26,6 +27,7 @@ multipathd.service                          enabled enabled
 netplan-configure.service                   enabled enabled
 networkd-dispatcher.service                 enabled enabled
 open-iscsi.service                          enabled enabled
+rsyslog.service                             enabled enabled
 setvtrgb.service                            enabled enabled
 snapd.apparmor.service                      enabled enabled
 snapd.autoimport.service                    enabled enabled
@@ -62,6 +64,7 @@ apt-daily.timer                             enabled enabled
 dpkg-db-backup.timer                        enabled enabled
 e2scrub_all.timer                           enabled enabled
 fstrim.timer                                enabled enabled
+logrotate.timer                             enabled enabled
 mdcheck_continue.timer                      enabled enabled
 mdcheck_start.timer                         enabled enabled
 mdmonitor-oneshot.timer                     enabled enabled
@@ -69,4 +72,4 @@ motd-news.timer                             enabled enabled
 snapd.snap-repair.timer                     enabled enabled
 xfs_scrub_all.timer                         enabled enabled
 
-69 unit files listed.
+72 unit files listed.
