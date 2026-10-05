@@ -2,6 +2,7 @@ Module                  Size  Used by
 aesni_intel            98304  0
 autofs4                61440  2
 binfmt_misc            24576  1
+bridge                425984  0
 cfg80211             1548288  0
 dm_log                 20480  2 dm_region_hash,dm_mirror
 dm_mirror              28672  0
@@ -32,9 +33,20 @@ intel_rapl_common      57344  1 intel_rapl_msr
 intel_rapl_msr         20480  0
 intel_uncore_frequency_common    20480  0
 intel_vsec             24576  2 intel_pmc_ssram_telemetry,pmt_telemetry
+ip_set                 61440  1 xt_set
 joydev                 32768  0
+llc                    16384  2 bridge,stp
 mac_hid                12288  0
-nfnetlink              20480  1
+nf_conntrack          196608  5 xt_conntrack,nf_nat,xt_nat,nf_conntrack_netlink,xt_MASQUERADE
+nf_conntrack_netlink    61440  0
+nf_defrag_ipv4         12288  1 nf_conntrack
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_nat                 65536  3 xt_nat,nft_chain_nat,xt_MASQUERADE
+nf_tables             409600  259 nft_compat,nft_chain_nat
+nfnetlink              20480  6 nft_compat,nf_conntrack_netlink,nf_tables,ip_set
+nft_chain_nat          12288  9
+nft_compat             20480  21
+overlay               233472  2
 pata_acpi              12288  0
 pmt_class              20480  2 pmt_telemetry,pmt_discovery
 pmt_discovery          24576  1 pmt_telemetry
@@ -43,7 +55,18 @@ psmouse               225280  0
 sch_fq_codel           28672  9
 scsi_transport_fc     122880  1 hv_storvsc
 serio_raw              20480  0
+stp                    12288  1 bridge
 tcp_diag               20480  0
 udp_diag               12288  0
+veth                   45056  0
 vmgenid                12288  0
 vsock                  73728  1 hv_sock
+x_tables               65536  7 xt_conntrack,nft_compat,xt_tcpudp,xt_addrtype,xt_nat,xt_set,xt_MASQUERADE
+xfrm_algo              16384  1 xfrm_user
+xfrm_user              69632  1
+xt_MASQUERADE          16384  2
+xt_addrtype            12288  4
+xt_conntrack           12288  2
+xt_nat                 12288  13
+xt_set                 20480  0
+xt_tcpudp              16384  0

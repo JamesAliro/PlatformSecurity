@@ -2,6 +2,8 @@ bash
 bsdutils
 dash
 diffutils
+docker-compose-v2
+docker.io
 findutils
 grep
 gzip

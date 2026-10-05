@@ -1,7 +1,8 @@
 apparmor module is loaded.
-172 profiles are loaded.
-96 profiles are in enforce mode.
+174 profiles are loaded.
+98 profiles are in enforce mode.
    /snap/snapd/27710/usr/lib/snapd/snap-confine
+   /snap/snapd/28254/usr/lib/snapd/snap-confine
    /usr/lib/snapd/snap-confine
    /usr/sbin/chronyd
    :glycin:bwrap
@@ -13,6 +14,7 @@ apparmor module is loaded.
    bwrap
    dig
    dnstracer
+   docker-default
    eigrpd
    fabricd
    fusermount3
@@ -177,11 +179,17 @@ apparmor module is loaded.
    vscode
    wike
    wpcom
-3 processes have profiles defined.
-3 processes are in enforce mode.
-   /usr/sbin/chronyd (1141) 
-   /usr/sbin/chronyd (1165) 
-   /usr/sbin/rsyslogd (2331) rsyslogd
+9 processes have profiles defined.
+9 processes are in enforce mode.
+   /usr/sbin/chronyd (1167) 
+   /usr/sbin/chronyd (1191) 
+   /bin/prometheus (5867) docker-default
+   /usr/bin/bash (31998) docker-default
+   /usr/local/bin/alirosd (32136) docker-default
+   /usr/local/bin/metrics_scraper (32137) docker-default
+   /usr/sbin/sshd (32154) docker-default
+   /usr/sbin/netconfd-pro (32157) docker-default
+   /usr/sbin/rsyslogd (1237) rsyslogd
 0 processes are in complain mode.
 0 processes are in prompt mode.
 0 processes are in kill mode.

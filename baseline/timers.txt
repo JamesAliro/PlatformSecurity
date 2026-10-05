@@ -1,14 +1,14 @@
-NEXT                            LEFT LAST                           PASSED UNIT                         ACTIVATES
-Fri 2026-09-25 00:00:00 UTC 2h 38min Thu 2026-09-24 18:31:01 UTC         - dpkg-db-backup.timer         dpkg-db-backup.service
-Fri 2026-09-25 00:52:29 UTC 3h 30min -                                   - logrotate.timer              logrotate.service
-Fri 2026-09-25 02:12:38 UTC 4h 50min Thu 2026-09-24 18:31:01 UTC         - motd-news.timer              motd-news.service
-Fri 2026-09-25 06:19:44 UTC       8h Thu 2026-09-24 18:31:01 UTC         - apt-daily-upgrade.timer      apt-daily-upgrade.service
-Fri 2026-09-25 15:32:58 UTC      18h Thu 2026-09-24 18:31:01 UTC         - apt-daily.timer              apt-daily.service
-Fri 2026-09-25 20:39:46 UTC      23h Thu 2026-09-24 20:39:46 UTC 42min ago systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
-Sun 2026-09-27 03:10:25 UTC   2 days Thu 2026-09-24 18:31:01 UTC         - xfs_scrub_all.timer          xfs_scrub_all.service
-Sun 2026-09-27 03:10:30 UTC   2 days Thu 2026-09-24 18:31:01 UTC         - e2scrub_all.timer            e2scrub_all.service
-Mon 2026-09-28 00:12:08 UTC   3 days Thu 2026-09-24 18:31:01 UTC         - fstrim.timer                 fstrim.service
--                                  - -                                   - apport-autoreport.timer      apport-autoreport.service
--                                  - -                                   - snapd.snap-repair.timer      snapd.snap-repair.service
+NEXT                            LEFT LAST                              PASSED UNIT                         ACTIVATES
+Tue 2026-10-06 00:00:00 UTC 2h 44min Mon 2026-10-05 16:43:25 UTC 4h 31min ago dpkg-db-backup.timer         dpkg-db-backup.service
+Tue 2026-10-06 00:57:11 UTC 3h 41min Mon 2026-10-05 16:48:34 UTC 4h 26min ago logrotate.timer              logrotate.service
+Tue 2026-10-06 01:12:27 UTC 3h 57min Mon 2026-10-05 18:00:49 UTC 3h 14min ago motd-news.timer              motd-news.service
+Tue 2026-10-06 06:27:30 UTC       9h Mon 2026-10-05 17:36:49 UTC 3h 38min ago apt-daily-upgrade.timer      apt-daily-upgrade.service
+Tue 2026-10-06 08:49:09 UTC      11h Mon 2026-10-05 20:38:30 UTC    36min ago apt-daily.timer              apt-daily.service
+Tue 2026-10-06 16:58:26 UTC      19h Mon 2026-10-05 16:58:26 UTC 4h 16min ago systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
+Sun 2026-10-11 03:10:20 UTC   5 days Mon 2026-10-05 16:44:25 UTC 4h 30min ago e2scrub_all.timer            e2scrub_all.service
+Sun 2026-10-11 03:10:49 UTC   5 days Mon 2026-10-05 16:44:25 UTC 4h 30min ago xfs_scrub_all.timer          xfs_scrub_all.service
+Mon 2026-10-12 00:35:50 UTC   6 days Mon 2026-10-05 16:52:12 UTC 4h 23min ago fstrim.timer                 fstrim.service
+-                                  - -                                      - apport-autoreport.timer      apport-autoreport.service
+-                                  - -                                      - snapd.snap-repair.timer      snapd.snap-repair.service
 
 11 timers listed.
