@@ -1,6 +1,6 @@
-# **ANS-1738: Ubuntu Server LTS and AlirOS on the Platform VM**
+# **ANS-1738: Install Ubuntu Server LTS AMD64 on AlirOS VM**
 
-**Owner:** James Colesanti · **Reporter:** Marty Fitzgerald · **Updated:** Oct 5, 2026
+**Owner:** James Colesanti · **Reporter:** Marty Fitzgerald · **Updated:** Oct 6, 2026
 
 ## **Summary**
 
@@ -21,31 +21,34 @@ Ubuntu Server 26.04 LTS (minimized) is installed on a dedicated platform VM with
 
 ## **1\. Packages included**
 
-**Included without further explanation:** systemd, systemd-resolved, udev, iproute2, iputils-ping, procps, util-linux, bash, grep, sed, gawk, findutils, less, nano, vim, apt, dpkg. Of these, iputils-ping, less, nano, and vim were not in the minimized install and were added with \--no-install-recommends. 
+**Included without further explanation:** systemd, udev, iproute2, procps, util-linux, bash, grep, sed, findutils, less
 
-**Included with a specific reason:**  
-Note: rsyslog/logrotate were not in the minimized install and were added with \--no-install-recommends
+**Included with a specific reason:**
 
-| Package | Reason |
-| :---- | :---- |
-| chrony | Replaces systemd-timesyncd from the original list. It is the Ubuntu 26.04 default, supports authenticated time (NTS) and only listens on localhost. Approved by Marty on ANS-1738, Sep 25\. |
-| sudo-rs | The sudo that actually runs on 26.04 (/usr/bin/sudo points to it). Written in Rust. |
-| rust-coreutils | Provides ls, cp and the other core commands on 26.04 (uutils). Satisfies the coreutils item. |
-| rsyslog, logrotate | Not in the minimized install; added so logs are written to plain files that can be forwarded. journald also runs; which one is primary is still open. |
-| apparmor | Confines system services and Docker containers (docker-default profile). |
-| ca-certificates | Needed for TLS to apt mirrors, GHCR, Docker Hub and NTS time servers. |
-| netplan.io, systemd-networkd | Network configuration from one YAML file, without NetworkManager's desktop and Wi-Fi features. |
-| Docker Engine, containerd, Compose v2 plugin | Required to run the AlirOS containers. |
-| openssh-server | Remote administration; ABQNet procedures use ssh. Whether it ships is still open (ANS-1764). |
-| python3 | Required by netplan.io, so it stays even after other Python packages are removed. |
-| lvm2, cryptsetup | Disk layout uses LVM; cryptsetup is kept in case shipped units use full-disk encryption. |
-| CPU microcode | Security fixes for the CPU on real hardware. |
+| Package | Reason | Attacker Usefulness | Cost to remove | Questions / Notes |
+| :---- | :---- | :---- | :---- | :---- |
+| chrony | Replaces systemd-timesyncd from the original list. It is the Ubuntu 26.04 default, supports authenticated time (NTS) and only listens on localhost. |  |  |  |
+| sudo-rs | The sudo that actually runs on 26.04 (/usr/bin/sudo points to it). Written in Rust. |  |  |  |
+| rust-coreutils | Provides ls, cp and the other core commands on 26.04 (uutils). Satisfies the coreutils item. |  |  |  |
+| rsyslog | Not in the minimized install; added so logs are written to plain files that can be forwarded. Note that journald also runs. | Low | Low-medium. We would lose text log files, but journald keeps everything. | Does anyone need /var/log/syslog files, or forwarding? Journald can forward too |
+| logrotate | Not in the minimized install; added so logs are written to plain files that can be forwarded. |  |  |  |
+| apparmor | Confines system services and Docker containers (docker-default profile). |  |  |  |
+| ca-certificates | Needed for TLS to apt mirrors, GHCR, Docker Hub and NTS time servers. |  |  |  |
+| netplan.io | Network configuration from one YAML file, without NetworkManager's desktop and Wi-Fi features. | Low on its own | Medium-high. Network config moves to systemd-networkd files and Ubuntu tooling expects netplan. | See python note |
+| systemd-resolved | Default name resolution service | Low | Medium. Static resolve.conf, losing DNS caching and DNS-over-TLS | Could keep but consider turning off its local DNS listener (DNSStubListener=no). Docker containers do DNS through Docker’s own resolver, so check name resolution inside the containers afterwards. |
+| systemd-networkd | Network configuration from one YAML file, without NetworkManager's desktop and Wi-Fi features. |  |  |  |
+| Docker Engine, containerd, Compose v2 plugin | Required to run the AlirOS containers. |  |  |  |
+| openssh-server | Remote administration; ABQNet procedures use ssh. Whether it ships is still open (ANS-1764). |  |  |  |
+| python3 | Required by netplan.io, so it stays even after other Python packages are removed. | High. Sockets, file access, anything, once someone has a foothold. | High. It needs netplan gone first. And other packages may depend on it. | Do we need python for other tasks? If so, there is little reason to look into removing netplan. |
+| gawk | Mawk is already installed and is Ubuntu’s default awk. Gawk provides additional features like built-in network sockets, dynamic loading of extension plugins, and array sorting functions.  | Medium. Gawk has built-in TCP networking (/inet/tcp/…) so it can serve as a reverse shell, while mawk can’t. | Very low. Mawk is already the default awk. bcache-tools also uses it, but that package is already on the proposed removal list. |  |
+| nano | Basic text editor |  |  |  |
+| vim | Basic text editor | Medium. Can run shell commands, and Ubuntu’s full vim is built with Python support, so it also keeps libpython3 installed. | Low. vim-tiny keeps vi without Python. | Do we need 2 text editors? |
+| iputils-ping | Provides standard command-line tools used to test network host reachability | Low. Basic network probing. | Low, but we lose a basic troubleshooting tool. |  |
+| apt / dpkg | Package management tools | Low | Very high for now. Would only be possible once we have our final list of packages. |  |
 
 ## 
 
-## 
-
-## **Packages added manually:** iputils-ping, less, nano, vim. rsyslog, logrotate, docker-compose-v2, docker.io
+## **Packages added manually:** iputils-ping, less, nano, vim, rsyslog, logrotate, docker-compose-v2, docker.io
 
 ## **2\. Candidates not included**
 
