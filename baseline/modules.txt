@@ -1,9 +1,12 @@
 Module                  Size  Used by
 aesni_intel            98304  0
+af_alg                 32768  1 algif_hash
+algif_hash             20480  0
 autofs4                61440  2
 binfmt_misc            24576  1
 bridge                425984  0
 cfg80211             1548288  0
+cpuid                  12288  0
 dm_log                 20480  2 dm_region_hash,dm_mirror
 dm_mirror              28672  0
 dm_multipath           45056  0

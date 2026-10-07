@@ -27,6 +27,7 @@ grub-initrd-fallback.service                enabled enabled
 grub2-common.service                        enabled enabled
 kdump-tools.service                         enabled enabled
 keyboard-setup.service                      enabled enabled
+lm-sensors.service                          enabled enabled
 lvm2-monitor.service                        enabled enabled
 multipathd.service                          enabled enabled
 netplan-configure.service                   enabled enabled
@@ -42,6 +43,7 @@ snapd.seeded.service                        enabled enabled
 snapd.service                               enabled enabled
 snapd.system-shutdown.service               enabled enabled
 sshd-keygen.service                         enabled enabled
+sysstat.service                             enabled enabled
 systemd-networkd-wait-online.service        enabled enabled
 systemd-networkd.service                    enabled enabled
 systemd-pstore.service                      enabled enabled
@@ -76,6 +78,9 @@ mdcheck_start.timer                         enabled enabled
 mdmonitor-oneshot.timer                     enabled enabled
 motd-news.timer                             enabled enabled
 snapd.snap-repair.timer                     enabled enabled
+sysstat-collect.timer                       enabled enabled
+sysstat-rotate.timer                        enabled enabled
+sysstat-summary.timer                       enabled enabled
 xfs_scrub_all.timer                         enabled enabled
 
-78 unit files listed.
+83 unit files listed.
