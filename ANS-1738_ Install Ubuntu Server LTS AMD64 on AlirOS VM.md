@@ -1,7 +1,5 @@
 # **ANS-1738: Install Ubuntu Server LTS AMD64 on AlirOS VM**
 
-**Owner:** James Colesanti · **Reporter:** Marty Fitzgerald · **Updated:** Oct 6, 2026
-
 ## **Summary**
 
 Ubuntu Server 26.04 LTS (minimized) is installed on a dedicated platform VM with the components listed in ANS-1738, using chrony in place of systemd-timesyncd. The AlirOS sample stack runs on it under Docker. Running AlirOS adds six network ports that are reachable from outside the host, so the main follow-up work is in ANS-1764 (listening services) and ANS-1763 (package removal).
@@ -30,29 +28,31 @@ Ubuntu Server 26.04 LTS (minimized) is installed on a dedicated platform VM with
 | chrony | Replaces systemd-timesyncd from the original list. It is the Ubuntu 26.04 default, supports authenticated time (NTS) and only listens on localhost. |  |  |  |
 | sudo-rs | The sudo that actually runs on 26.04 (/usr/bin/sudo points to it). Written in Rust. |  |  |  |
 | rust-coreutils | Provides ls, cp and the other core commands on 26.04 (uutils). Satisfies the coreutils item. |  |  |  |
-| rsyslog | Not in the minimized install; added so logs are written to plain files that can be forwarded. Note that journald also runs. | Low | Low-medium. We would lose text log files, but journald keeps everything. | Does anyone need /var/log/syslog files, or forwarding? Journald can forward too |
+| rsyslog | Not in the minimized install; added so logs are written to plain files that can be forwarded. Note that journald also runs. | Low | Low-medium. We would lose text log files, but journald keeps everything. |  |
 | logrotate | Not in the minimized install; added so logs are written to plain files that can be forwarded. |  |  |  |
 | apparmor | Confines system services and Docker containers (docker-default profile). |  |  |  |
 | ca-certificates | Needed for TLS to apt mirrors, GHCR, Docker Hub and NTS time servers. |  |  |  |
-| netplan.io | Network configuration from one YAML file, without NetworkManager's desktop and Wi-Fi features. | Low on its own | Medium-high. Network config moves to systemd-networkd files and Ubuntu tooling expects netplan. | See python note |
-| systemd-resolved | Default name resolution service | Low | Medium. Static resolve.conf, losing DNS caching and DNS-over-TLS | Could keep but consider turning off its local DNS listener (DNSStubListener=no). Docker containers do DNS through Docker’s own resolver, so check name resolution inside the containers afterwards. |
+| netplan.io | Network configuration from one YAML file, without NetworkManager's desktop and Wi-Fi features. | Low on its own | Medium-high. Network config moves to systemd-networkd files and Ubuntu tooling expects netplan. |  |
+| systemd-resolved | Default name resolution service | Low | Medium. Static resolve.conf, losing DNS caching and DNS-over-TLS | Could keep but consider turning off its local DNS listener (DNSStubListener=no). Docker containers do DNS through Docker’s own resolver, so check name resolution inside the containers afterwards. Shouldn’t be an issue as long as containers are created after change is made. |
 | systemd-networkd | Network configuration from one YAML file, without NetworkManager's desktop and Wi-Fi features. |  |  |  |
 | Docker Engine, containerd, Compose v2 plugin | Required to run the AlirOS containers. |  |  |  |
 | openssh-server | Remote administration; ABQNet procedures use ssh. Whether it ships is still open (ANS-1764). |  |  |  |
-| python3 | Required by netplan.io, so it stays even after other Python packages are removed. | High. Sockets, file access, anything, once someone has a foothold. | High. It needs netplan gone first. And other packages may depend on it. | Do we need python for other tasks? If so, there is little reason to look into removing netplan. |
-| gawk | Mawk is already installed and is Ubuntu’s default awk. Gawk provides additional features like built-in network sockets, dynamic loading of extension plugins, and array sorting functions.  | Medium. Gawk has built-in TCP networking (/inet/tcp/…) so it can serve as a reverse shell, while mawk can’t. | Very low. Mawk is already the default awk. bcache-tools also uses it, but that package is already on the proposed removal list. |  |
-| nano | Basic text editor |  |  |  |
-| vim | Basic text editor | Medium. Can run shell commands, and Ubuntu’s full vim is built with Python support, so it also keeps libpython3 installed. | Low. vim-tiny keeps vi without Python. | Do we need 2 text editors? |
+| python3 | Required by netplan.io, so it stays even after other Python packages are removed. | High. Sockets, file access, anything, once someone has a foothold. | High. It needs netplan gone first, and other packages may depend on it. |  |
+| gawk | Mawk is already installed and is Ubuntu’s default awk. Gawk provides additional features like built-in network sockets, dynamic loading of extension plugins, and array sorting functions.  | Medium. Gawk has built-in TCP networking (/inet/tcp/…) so it can serve as a reverse shell, while mawk can’t. | Very low. Mawk is already the default awk. bcache-tools also uses gawk, but that package is already on the proposed removal list. |  |
+| nano | Basic text editor | Can also run shell commands, but easier to disable |  |  |
+| vim | Basic text editor | Medium. Can run shell commands, and Ubuntu’s full vim is built with Python support, so it also keeps libpython3 installed. CVE-2019-12735: Opening a crafted file ran commands, exploited vim’s modelines | Low. vim-tiny keeps vi without Python. |  |
 | iputils-ping | Provides standard command-line tools used to test network host reachability | Low. Basic network probing. | Low, but we lose a basic troubleshooting tool. |  |
 | apt / dpkg | Package management tools | Low | Very high for now. Would only be possible once we have our final list of packages. |  |
 
 ## 
 
-## **Packages added manually:** iputils-ping, less, nano, vim, rsyslog, logrotate, docker-compose-v2, docker.io
+## **Packages added manually:** iputils-ping, less, nano, vim, rsyslog, logrotate, docker-compose-v2, [docker.io](http://docker.io)
+
+**Summary:** Keep python. Can look into configuring systemd-resolved and removing apt/dpkg/gawk.
 
 ## **2\. Candidates not included**
 
-"Decided" items are settled. "Proposed" items ship with the stock install and are planned for removal in ANS-1763 after review.
+"Decided" items are settled and currently omitted from the VM. "Proposed" items ship with the stock install and are planned for removal in ANS-1763 after review.
 
 | Package | Reason | Status |
 | :---- | :---- | :---- |
@@ -69,6 +69,8 @@ Ubuntu Server 26.04 LTS (minimized) is installed on a dedicated platform VM with
 | Classic sudo | Unused fallback next to sudo-rs; a second SUID binary. | Proposed (ANS-1763) |
 | netcat-openbsd, wget, ssh-import-id, xauth, usbmuxd | No administrative need. ssh-import-id pulls SSH keys from Launchpad or GitHub; usbmuxd is for iPhones over USB. | Proposed (ANS-1763) |
 | software-properties-common, packagekit, ubuntu-drivers-common | Desktop-style package and driver tools; removes polkitd and most of GnuPG with them (apt keeps gpgv). | Proposed (ANS-1763) |
+| apt / dpkg |  | Proposed (Very end of Platform Security work) |
+| gawk |  | Proposed (ANS-1763) |
 | kdump-tools | A crash dump holds full memory contents, which could include key material. | Open |
 
 ## 
@@ -85,7 +87,7 @@ Ubuntu Server 26.04 LTS (minimized) is installed on a dedicated platform VM with
 > * **ANS-1764, listening services:** ports 830, 8080, 8090 and 9090 (aliros), and 9999 (Prometheus) are published on all interfaces. Before AlirOS, only sshd on port 22 was reachable. The aliros container also runs its own sshd and a NETCONF server (netconfd-pro) as root; Prometheus runs as root without TLS or authentication.  
 > * **ANS-1763, package removal:** the "Proposed" rows in section 2\.  
 > * **Secrets:** the compose file contains an API key in plain text (api\_key for skip-api); it belongs in .env or a secrets file.  
-> * **Stack scope:** the sample stack has no postgres or hw container. Confirm with Matt whether it is the full production stack and whether simulated LogDev containers apply.  
+> * **Stack scope:** the sample stack has no postgres or hw container. Confirm whether it is the full production stack and whether simulated LogDev containers apply.  
 > * **Autoinstall story:** drafted, to reproduce this baseline and install the deployment bundle.  
 > * **VM generation:** the VM appears to boot legacy BIOS (Gen 1): grub-pc is installed and floppy and PIIX4 modules are loaded. A Gen 2 rebuild with Secure Boot would match UEFI target hardware.
 
