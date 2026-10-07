@@ -1,0 +1,115 @@
+table ip nat {
+	chain DOCKER {
+		iifname != "br-30f15546dfd6" tcp dport 9999 counter packets 0 bytes 0 dnat to 172.19.0.2:9999
+		iifname != "br-30f15546dfd6" tcp dport 830 counter packets 0 bytes 0 dnat to 172.19.0.3:830
+		iifname != "br-30f15546dfd6" tcp dport 8080 counter packets 0 bytes 0 dnat to 172.19.0.3:8080
+		iifname != "br-30f15546dfd6" tcp dport 8090 counter packets 0 bytes 0 dnat to 172.19.0.3:8090
+		iifname != "br-30f15546dfd6" tcp dport 9090 counter packets 0 bytes 0 dnat to 172.19.0.3:9090
+	}
+
+	chain PREROUTING {
+		type nat hook prerouting priority dstnat; policy accept;
+		fib daddr type local counter packets 2 bytes 104 jump DOCKER
+	}
+
+	chain OUTPUT {
+		type nat hook output priority dstnat; policy accept;
+		ip daddr != 127.0.0.0/8 fib daddr type local counter packets 0 bytes 0 jump DOCKER
+	}
+
+	chain POSTROUTING {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 172.17.0.0/16 oifname != "docker0" counter packets 0 bytes 0 masquerade
+		ip saddr 172.19.0.0/16 oifname != "br-30f15546dfd6" counter packets 5 bytes 300 masquerade
+	}
+}
+table ip filter {
+	chain DOCKER {
+		ip daddr 172.19.0.3 iifname != "br-30f15546dfd6" oifname "br-30f15546dfd6" tcp dport 9090 counter packets 0 bytes 0 accept
+		ip daddr 172.19.0.3 iifname != "br-30f15546dfd6" oifname "br-30f15546dfd6" tcp dport 8090 counter packets 0 bytes 0 accept
+		ip daddr 172.19.0.3 iifname != "br-30f15546dfd6" oifname "br-30f15546dfd6" tcp dport 8080 counter packets 0 bytes 0 accept
+		ip daddr 172.19.0.3 iifname != "br-30f15546dfd6" oifname "br-30f15546dfd6" tcp dport 830 counter packets 0 bytes 0 accept
+		ip daddr 172.19.0.2 iifname != "br-30f15546dfd6" oifname "br-30f15546dfd6" tcp dport 9999 counter packets 0 bytes 0 accept
+		iifname != "br-30f15546dfd6" oifname "br-30f15546dfd6" counter packets 0 bytes 0 drop
+		iifname != "docker0" oifname "docker0" counter packets 0 bytes 0 drop
+	}
+
+	chain DOCKER-FORWARD {
+		counter packets 52 bytes 3120 jump DOCKER-CT
+		counter packets 52 bytes 3120 jump DOCKER-INTERNAL
+		counter packets 52 bytes 3120 jump DOCKER-BRIDGE
+		iifname "br-30f15546dfd6" counter packets 52 bytes 3120 accept
+		iifname "docker0" counter packets 0 bytes 0 accept
+	}
+
+	chain DOCKER-BRIDGE {
+		oifname "br-30f15546dfd6" counter packets 0 bytes 0 jump DOCKER
+		oifname "docker0" counter packets 0 bytes 0 jump DOCKER
+	}
+
+	chain DOCKER-CT {
+		oifname "br-30f15546dfd6" ct state related,established counter packets 0 bytes 0 accept
+		oifname "docker0" ct state related,established counter packets 0 bytes 0 accept
+	}
+
+	chain DOCKER-INTERNAL {
+	}
+
+	chain FORWARD {
+		type filter hook forward priority filter; policy drop;
+		counter packets 52 bytes 3120 jump DOCKER-USER
+		counter packets 52 bytes 3120 jump DOCKER-FORWARD
+	}
+
+	chain DOCKER-USER {
+	}
+}
+table ip6 nat {
+	chain DOCKER {
+	}
+
+	chain PREROUTING {
+		type nat hook prerouting priority dstnat; policy accept;
+		fib daddr type local counter packets 0 bytes 0 jump DOCKER
+	}
+
+	chain OUTPUT {
+		type nat hook output priority dstnat; policy accept;
+		ip6 daddr != ::1 fib daddr type local counter packets 0 bytes 0 jump DOCKER
+	}
+}
+table ip6 filter {
+	chain DOCKER {
+	}
+
+	chain DOCKER-FORWARD {
+		counter packets 0 bytes 0 jump DOCKER-CT
+		counter packets 0 bytes 0 jump DOCKER-INTERNAL
+		counter packets 0 bytes 0 jump DOCKER-BRIDGE
+	}
+
+	chain DOCKER-BRIDGE {
+	}
+
+	chain DOCKER-CT {
+	}
+
+	chain DOCKER-INTERNAL {
+	}
+
+	chain FORWARD {
+		type filter hook forward priority filter; policy accept;
+		counter packets 0 bytes 0 jump DOCKER-USER
+		counter packets 0 bytes 0 jump DOCKER-FORWARD
+	}
+
+	chain DOCKER-USER {
+	}
+}
+table ip raw {
+	chain PREROUTING {
+		type filter hook prerouting priority raw; policy accept;
+		ip daddr 172.19.0.2 iifname != "br-30f15546dfd6" counter packets 0 bytes 0 drop
+		ip daddr 172.19.0.3 iifname != "br-30f15546dfd6" counter packets 0 bytes 0 drop
+	}
+}

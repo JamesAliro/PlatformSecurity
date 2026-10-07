@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Wed Oct  7 15:19:39 2026 as: nmap -sV -p 22,830,8080,8090,9090,9999 -Pn -oA ans1740-tcp-services 172.18.112.32 -->
+<nmaprun scanner="nmap" args="nmap -sV -p 22,830,8080,8090,9090,9999 -Pn -oA ans1740-tcp-services 172.18.112.32" start="1791400779" startstr="Wed Oct  7 15:19:39 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="6" services="22,830,8080,8090,9090,9999"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.112.32" addrtype="ipv4"/>
+<address addr="00:15:5D:CF:B4:02" addrtype="mac" vendor="Microsoft"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1791400779" endtime="1791400806"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.112.32" addrtype="ipv4"/>
+<address addr="00:15:5D:CF:B4:02" addrtype="mac" vendor="Microsoft"/>
+<hostnames>
+<hostname name="platformsecjames.mshome.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="10.2p1 Ubuntu 2ubuntu3.6" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:10.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="830"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.14" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http-proxy" servicefp="SF-Port8080-TCP:V=7.98%I=7%D=10/7%Time=6AC69B51%P=x86_64-pc-linux-gnu%r(GetRequest,FF,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nCache-Control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20private,\x20max-age=0\r\nExpires:\x200\r\nPragma:\x20no-cache\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Wed,\x2007\x20Oct\x202026\x2019:13:02\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20404:\x20Not\x20Found\nNot\x20Found&quot;)%r(HTTPOptions,FF,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nCache-Control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20private,\x20max-age=0\r\nExpires:\x200\r\nPragma:\x20no-cache\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Wed,\x2007\x20Oct\x202026\x2019:13:02\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20404:\x20Not\x20Found\nNot\x20Found&quot;)%r(RTSPRequest,10A,&quot;HTTP/RTSP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20private,\x20max-age=0\r\nExpires:\x200\r\nPragma:\x20no-cache\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Wed,\x2007\x20Oct\x202026\x2019:13:02\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20400:\x20Bad\x20Request\nBad\x20request&quot;)%r(FourOhFourRequest,FF,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nCache-Control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20private,\x20max-age=0\r\nExpires:\x200\r\nPragma:\x20no-cache\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Wed,\x2007\x20Oct\x202026\x2019:13:02\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20404:\x20Not\x20Found\nNot\x20Found&quot;)%r(Socks5,10B,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20private,\x20max-age=0\r\nExpires:\x200\r\nPragma:\x20no-cache\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Wed,\x2007\x20Oct\x202026\x2019:13:02\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20400:\x20Bad\x20Request\nMalformed\x20message&quot;)%r(Socks4,10B,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20private,\x20max-age=0\r\nExpires:\x200\r\nPragma:\x20no-cache\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Wed,\x2007\x20Oct\x202026\x2019:13:02\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20400:\x20Bad\x20Request\nMalformed\x20message&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="8090"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="opsmessaging" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9090"><state state="closed" reason="reset" reason_ttl="63"/><service name="zeus-admin" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9999"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Golang net/http server" extrainfo="Go-IPFS json-rpc or InfluxDB API" method="probed" conf="10"><cpe>cpe:/a:protocol_labs:go-ipfs</cpe></service></port>
+</ports>
+<times srtt="341" rttvar="927" to="100000"/>
+</host>
+<runstats><finished time="1791400806" timestr="Wed Oct  7 15:20:06 2026" summary="Nmap done at Wed Oct  7 15:20:06 2026; 1 IP address (1 host up) scanned in 27.22 seconds" elapsed="27.22" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

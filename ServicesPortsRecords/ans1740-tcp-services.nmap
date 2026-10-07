@@ -1,0 +1,50 @@
+# Nmap 7.98 scan initiated Wed Oct  7 15:19:39 2026 as: nmap -sV -p 22,830,8080,8090,9090,9999 -Pn -oA ans1740-tcp-services 172.18.112.32
+Nmap scan report for platformsecjames.mshome.net (172.18.112.32)
+Host is up (0.00034s latency).
+
+PORT     STATE  SERVICE       VERSION
+22/tcp   open   ssh           OpenSSH 10.2p1 Ubuntu 2ubuntu3.6 (Ubuntu Linux; protocol 2.0)
+830/tcp  open   ssh           OpenSSH 8.9p1 Ubuntu 3ubuntu0.14 (Ubuntu Linux; protocol 2.0)
+8080/tcp open   http-proxy
+8090/tcp open   opsmessaging?
+9090/tcp closed zeus-admin
+9999/tcp open   http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.98%I=7%D=10/7%Time=6AC69B51%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,FF,"HTTP/1\.0\x20404\x20Not\x20Found\r\nCache-Control:\x20no-c
+SF:ache,\x20no-store,\x20must-revalidate,\x20private,\x20max-age=0\r\nExpi
+SF:res:\x200\r\nPragma:\x20no-cache\r\nContent-Type:\x20text/plain;\x20cha
+SF:rset=utf-8\r\nDate:\x20Wed,\x2007\x20Oct\x202026\x2019:13:02\x20GMT\r\n
+SF:Connection:\x20close\r\n\r\nError\x20404:\x20Not\x20Found\nNot\x20Found
+SF:")%r(HTTPOptions,FF,"HTTP/1\.0\x20404\x20Not\x20Found\r\nCache-Control:
+SF:\x20no-cache,\x20no-store,\x20must-revalidate,\x20private,\x20max-age=0
+SF:\r\nExpires:\x200\r\nPragma:\x20no-cache\r\nContent-Type:\x20text/plain
+SF:;\x20charset=utf-8\r\nDate:\x20Wed,\x2007\x20Oct\x202026\x2019:13:02\x2
+SF:0GMT\r\nConnection:\x20close\r\n\r\nError\x20404:\x20Not\x20Found\nNot\
+SF:x20Found")%r(RTSPRequest,10A,"HTTP/RTSP/1\.0\x20400\x20Bad\x20Request\r
+SF:\nCache-Control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20priva
+SF:te,\x20max-age=0\r\nExpires:\x200\r\nPragma:\x20no-cache\r\nContent-Typ
+SF:e:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Wed,\x2007\x20Oct\x20202
+SF:6\x2019:13:02\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20400:\x20Ba
+SF:d\x20Request\nBad\x20request")%r(FourOhFourRequest,FF,"HTTP/1\.0\x20404
+SF:\x20Not\x20Found\r\nCache-Control:\x20no-cache,\x20no-store,\x20must-re
+SF:validate,\x20private,\x20max-age=0\r\nExpires:\x200\r\nPragma:\x20no-ca
+SF:che\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Wed,\x
+SF:2007\x20Oct\x202026\x2019:13:02\x20GMT\r\nConnection:\x20close\r\n\r\nE
+SF:rror\x20404:\x20Not\x20Found\nNot\x20Found")%r(Socks5,10B,"HTTP/1\.0\x2
+SF:0400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store,\x20m
+SF:ust-revalidate,\x20private,\x20max-age=0\r\nExpires:\x200\r\nPragma:\x2
+SF:0no-cache\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20
+SF:Wed,\x2007\x20Oct\x202026\x2019:13:02\x20GMT\r\nConnection:\x20close\r\
+SF:n\r\nError\x20400:\x20Bad\x20Request\nMalformed\x20message")%r(Socks4,1
+SF:0B,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x
+SF:20no-store,\x20must-revalidate,\x20private,\x20max-age=0\r\nExpires:\x2
+SF:00\r\nPragma:\x20no-cache\r\nContent-Type:\x20text/plain;\x20charset=ut
+SF:f-8\r\nDate:\x20Wed,\x2007\x20Oct\x202026\x2019:13:02\x20GMT\r\nConnect
+SF:ion:\x20close\r\n\r\nError\x20400:\x20Bad\x20Request\nMalformed\x20mess
+SF:age");
+MAC Address: 00:15:5D:CF:B4:02 (Microsoft)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct  7 15:20:06 2026 -- 1 IP address (1 host up) scanned in 27.22 seconds

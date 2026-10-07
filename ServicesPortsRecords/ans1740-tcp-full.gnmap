@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Wed Oct  7 15:17:28 2026 as: nmap -sS -p- -T4 -Pn --reason -oA ans1740-tcp-full 172.18.112.32
+Host: 172.18.112.32 (platformsecjames.mshome.net)	Status: Up
+Host: 172.18.112.32 (platformsecjames.mshome.net)	Ports: 22/open/tcp//ssh///, 830/open/tcp//netconf-ssh///, 8080/open/tcp//http-proxy///, 8090/open/tcp//opsmessaging///, 9999/open/tcp//abyss///	Ignored State: closed (65530)
+# Nmap done at Wed Oct  7 15:17:29 2026 -- 1 IP address (1 host up) scanned in 0.69 seconds

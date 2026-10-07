@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Wed Oct  7 15:19:39 2026 as: nmap -sV -p 22,830,8080,8090,9090,9999 -Pn -oA ans1740-tcp-services 172.18.112.32
+Host: 172.18.112.32 (platformsecjames.mshome.net)	Status: Up
+Host: 172.18.112.32 (platformsecjames.mshome.net)	Ports: 22/open/tcp//ssh//OpenSSH 10.2p1 Ubuntu 2ubuntu3.6 (Ubuntu Linux; protocol 2.0)/, 830/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.14 (Ubuntu Linux; protocol 2.0)/, 8080/open/tcp//http-proxy///, 8090/open/tcp//opsmessaging?///, 9090/closed/tcp//zeus-admin///, 9999/open/tcp//http//Golang net|http server (Go-IPFS json-rpc or InfluxDB API)/
+# Nmap done at Wed Oct  7 15:20:06 2026 -- 1 IP address (1 host up) scanned in 27.22 seconds
