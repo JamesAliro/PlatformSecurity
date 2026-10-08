@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Thu Oct  8 15:53:01 2026 as: nmap -sU -p 40821 -Pn -oA ans1740-udp-check 172.18.118.177 -->
+<nmaprun scanner="nmap" args="nmap -sU -p 40821 -Pn -oA ans1740-udp-check 172.18.118.177" start="1791489181" startstr="Thu Oct  8 15:53:01 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="1" services="40821"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.118.177" addrtype="ipv4"/>
+<address addr="00:15:5D:CF:B4:02" addrtype="mac" vendor="Microsoft"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1791489181" endtime="1791489181"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.118.177" addrtype="ipv4"/>
+<address addr="00:15:5D:CF:B4:02" addrtype="mac" vendor="Microsoft"/>
+<hostnames>
+<hostname name="platformsecjames.mshome.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="udp" portid="40821"><state state="closed" reason="port-unreach" reason_ttl="64"/></port>
+</ports>
+<times srtt="313" rttvar="3757" to="100000"/>
+</host>
+<runstats><finished time="1791489181" timestr="Thu Oct  8 15:53:01 2026" summary="Nmap done at Thu Oct  8 15:53:01 2026; 1 IP address (1 host up) scanned in 0.11 seconds" elapsed="0.11" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
