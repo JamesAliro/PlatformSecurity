@@ -1,0 +1,33 @@
+root L
+daemon L
+bin L
+sys L
+sync L
+games L
+man L
+lp L
+mail L
+news L
+uucp L
+proxy L
+www-data L
+backup L
+list L
+irc L
+_apt L
+nobody L
+systemd-network L
+dhcpcd L
+messagebus L
+systemd-resolve L
+_chrony L
+usbmux L
+polkitd L
+jamesaliro P
+sshd L
+syslog L
+tcpdump L
+iperf3 L
+sudo:x:27:jamesaliro
+adm:x:4:jamesaliro,syslog
+docker:x:104:

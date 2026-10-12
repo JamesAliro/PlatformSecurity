@@ -1,0 +1,5 @@
+lo               UNKNOWN        ::1/128 
+eth0             UP             fe80::215:5dff:fecf:b402/64 
+br-30f15546dfd6  UP             fe80::88d:ddff:fef3:2b94/64 
+veth5c39383@eth0 UP             fe80::4ca3:bff:fe0e:fb60/64 
+veth0439ad0@eth0 UP             fe80::fc57:f2ff:fe3b:22ad/64 

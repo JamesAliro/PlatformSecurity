@@ -1,9 +1,6 @@
 apparmor module is loaded.
-175 profiles are loaded.
-99 profiles are in enforce mode.
-   /snap/snapd/27710/usr/lib/snapd/snap-confine
-   /snap/snapd/28254/usr/lib/snapd/snap-confine
-   /usr/lib/snapd/snap-confine
+166 profiles are loaded.
+90 profiles are in enforce mode.
    /usr/sbin/chronyd
    :glycin:bwrap
    :glycin:loaders
@@ -20,8 +17,6 @@ apparmor module is loaded.
    fusermount3
    gs
    hostname
-   hwctl
-   hwctl//kmod
    iotop-c
    ipa_verify
    irssi
@@ -70,10 +65,6 @@ apparmor module is loaded.
    sbuild-unhold
    sbuild-update
    sbuild-upgrade
-   snap-update-ns.hwctl
-   snap.hwctl.hook.configure
-   snap.hwctl.hwctl
-   snap.hwctl.hwctl-daemon
    ssh-keyscan
    staticd
    systemd-detect-virt
@@ -180,17 +171,11 @@ apparmor module is loaded.
    vscode
    wike
    wpcom
-9 processes have profiles defined.
-9 processes are in enforce mode.
-   /usr/sbin/chronyd (1214) 
-   /usr/sbin/chronyd (1238) 
-   /bin/prometheus (16458) docker-default
-   /usr/bin/bash (16465) docker-default
-   /usr/local/bin/alirosd (16664) docker-default
-   /usr/local/bin/metrics_scraper (16665) docker-default
-   /usr/sbin/sshd (16677) docker-default
-   /usr/sbin/netconfd-pro (16683) docker-default
-   /usr/sbin/rsyslogd (1244) rsyslogd
+3 processes have profiles defined.
+3 processes are in enforce mode.
+   /usr/sbin/chronyd (1110) 
+   /usr/sbin/chronyd (1132) 
+   /usr/sbin/rsyslogd (1156) rsyslogd
 0 processes are in complain mode.
 0 processes are in prompt mode.
 0 processes are in kill mode.
