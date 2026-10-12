@@ -2,10 +2,8 @@ apparmor
 apport
 apt
 bash
-bcache-tools
 bind9-dnsutils
 bsdutils
-btrfs-progs
 ca-certificates
 chrony
 cloud-init
@@ -39,7 +37,6 @@ lsof
 lvm2
 mdadm
 mtr-tiny
-multipath-tools
 nano
 ncurses-base
 ncurses-bin
@@ -47,7 +44,6 @@ needrestart
 netbase
 netplan.io
 nftables
-open-iscsi
 openssh-server
 rsyslog
 sqlite3
@@ -68,4 +64,3 @@ unminimize
 util-linux
 valgrind
 vim
-xfsprogs

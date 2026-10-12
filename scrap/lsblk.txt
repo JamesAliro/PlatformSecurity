@@ -1,0 +1,8 @@
+NAME                      FSTYPE      FSVER    LABEL UUID                                   FSAVAIL FSUSE% MOUNTPOINTS
+fd0                                                                                                        
+sda                                                                                                        
+├─sda1                                                                                                     
+├─sda2                    ext4        1.0            4d55fa26-ac50-44c6-85fc-c92f2068b94d      1.7G     7% /boot
+└─sda3                    LVM2_member LVM2 001       U3NdYx-C2Rn-Rx5r-mp1a-j0hX-6h2C-h3yRFl                
+  └─ubuntu--vg-ubuntu--lv ext4        1.0            c90a7d9c-b3ef-4292-95b8-22b1516cdea6     76.4G    17% /
+sr0                                                                                                        

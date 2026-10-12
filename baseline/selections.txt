@@ -11,7 +11,6 @@ base-files					install
 base-passwd					install
 bash						install
 bash-completion					install
-bcache-tools					install
 bind9-dnsutils					install
 bind9-host					install
 bind9-libs:amd64				install
@@ -23,7 +22,6 @@ bpftool						install
 bpftrace					install
 bsdextrautils					install
 bsdutils					install
-btrfs-progs					install
 busybox-initramfs				install
 busybox-static					install
 ca-certificates					install
@@ -213,17 +211,14 @@ libgstreamer1.0-0:amd64				install
 libgudev-1.0-0:amd64				install
 libhogweed6t64:amd64				install
 libibverbs1:amd64				install
-libicu78:amd64					install
 libidn2-0:amd64					install
 libimobiledevice-1.0-6:amd64			install
 libimobiledevice-glue-1.0-0			install
-libinih1:amd64					install
 libintl-perl					install
 libintl-xs-perl					install
 libip4tc2:amd64					install
 libip6tc2:amd64					install
 libiperf0:amd64					install
-libisns0t64:amd64				install
 libjansson4:amd64				install
 libjemalloc2:amd64				install
 libjpeg-turbo8:amd64				install
@@ -256,10 +251,7 @@ libmd0:amd64					install
 libmnl0:amd64					install
 libmodule-find-perl				install
 libmount1:amd64					install
-libmpathcmd0					install
-libmpathpersist0				install
 libmpfr6:amd64					install
-libmultipath0					install
 libnbd0:amd64					install
 libncurses6:amd64				install
 libncursesw6:amd64				install
@@ -279,7 +271,6 @@ libnpth0t64:amd64				install
 libnss-systemd:amd64				install
 libnuma1:amd64					install
 libonig5:amd64					install
-libopeniscsiusr					install
 libp11-kit0:amd64				install
 libpackagekit-glib2-18:amd64			install
 libpam-cap:amd64				install
@@ -324,7 +315,6 @@ libsensors-config				install
 libsensors5:amd64				install
 libsepol2:amd64					install
 libsframe3:amd64				install
-libsgutils2-1.48:amd64				install
 libslang2:amd64					install
 libsmartcols1:amd64				install
 libsnappy1v5:amd64				install
@@ -443,7 +433,6 @@ mesa-libgallium:amd64				install
 mokutil						install
 mount						install
 mtr-tiny					install
-multipath-tools					install
 nano						install
 ncurses-base					install
 ncurses-bin					install
@@ -455,7 +444,6 @@ netplan-generator				install
 netplan.io					install
 networkd-dispatcher				install
 nftables					install
-open-iscsi					install
 openssh-client					install
 openssh-server					install
 openssh-sftp-server				install
@@ -553,8 +541,6 @@ rust-coreutils					install
 screen						install
 sed						install
 sensible-utils					install
-sg3-utils					install
-sg3-utils-udev					install
 sgml-base					install
 shared-mime-info				install
 software-properties-common			install
@@ -599,7 +585,6 @@ wget						install
 wireless-regdb					install
 xauth						install
 xdg-user-dirs					install
-xfsprogs					install
 xkb-data					install
 xml-core					install
 xz-utils					install

@@ -23,10 +23,8 @@ kdump-tools.service                  enabled enabled
 keyboard-setup.service               enabled enabled
 lm-sensors.service                   enabled enabled
 lvm2-monitor.service                 enabled enabled
-multipathd.service                   enabled enabled
 netplan-configure.service            enabled enabled
 networkd-dispatcher.service          enabled enabled
-open-iscsi.service                   enabled enabled
 rsyslog.service                      enabled enabled
 setvtrgb.service                     enabled enabled
 sshd-keygen.service                  enabled enabled
@@ -37,12 +35,10 @@ systemd-pstore.service               enabled enabled
 systemd-resolved.service             enabled enabled
 thermald.service                     enabled enabled
 unattended-upgrades.service          enabled enabled
-system-xfs_scrub.slice               enabled enabled
 apport-forward.socket                enabled enabled
 cloud-init-hotplugd.socket           enabled enabled
 dm-event.socket                      enabled enabled
 docker.socket                        enabled enabled
-iscsid.socket                        enabled enabled
 lvm2-lvmpolld.socket                 enabled enabled
 polkit-agent-helper.socket           enabled enabled
 ssh.socket                           enabled enabled
@@ -64,6 +60,5 @@ motd-news.timer                      enabled enabled
 sysstat-collect.timer                enabled enabled
 sysstat-rotate.timer                 enabled enabled
 sysstat-summary.timer                enabled enabled
-xfs_scrub_all.timer                  enabled enabled
 
-66 unit files listed.
+61 unit files listed.
