@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 out=~/baseline; mkdir -p "$out"; cd "$out"
-dpkg-query -W -f='${Package}\t${Version}\t${Architecture}\t${Priority}\t${Installed-Size}\n' | sort > packages.tsv
+dpkg-query -W -f='${db:Status-Abbrev}\t${Package}\t${Version}\n' | awk -F'\t' '$1 ~/^ii/ {print $2"\t"$3}' | sort > packages.tsv
 dpkg --get-selections > selections.txt
 apt-mark showmanual | sort > manual.txt
 apt-mark showauto   | sort > auto.txt

@@ -96,7 +96,6 @@ grub-pc-bin					install
 grub2-common					install
 gzip						install
 hostname					install
-hwctl						install
 hwdata						install
 ieee-data					install
 init-system-helpers				install
@@ -434,7 +433,6 @@ lsb-base					install
 lsb-release					install
 lsof						install
 lvm2						install
-lxd-installer					install
 makedumpfile					install
 manpages					install
 manpages-dev					install
@@ -559,7 +557,6 @@ sg3-utils					install
 sg3-utils-udev					install
 sgml-base					install
 shared-mime-info				install
-snapd						install
 software-properties-common			install
 sqlite3						install
 squashfs-tools					install
@@ -585,7 +582,6 @@ ubuntu-drivers-common				install
 ubuntu-kernel-accessories			install
 ubuntu-keyring					install
 ubuntu-release-upgrader-core			install
-ubuntu-server-minimal				install
 ucf						install
 udev						install
 unattended-upgrades				install
