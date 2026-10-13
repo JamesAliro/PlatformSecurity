@@ -36,6 +36,7 @@ logrotate
 lsof
 lvm2
 mdadm
+mokutil
 mtr-tiny
 nano
 ncurses-base
@@ -45,6 +46,7 @@ netbase
 netplan.io
 nftables
 openssh-server
+python3
 rsyslog
 sqlite3
 stress-ng
@@ -56,11 +58,11 @@ systemd-resolved
 systemd-sysv
 tcpdump
 traceroute
-ubuntu-drivers-common
 ubuntu-release-upgrader-core
 udev
 unattended-upgrades
 unminimize
+usbutils
 util-linux
 valgrind
 vim

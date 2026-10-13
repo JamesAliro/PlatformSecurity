@@ -16,7 +16,6 @@ docker.service                       enabled enabled
 e2scrub_reap.service                 enabled enabled
 finalrd.service                      enabled enabled
 getty@.service                       enabled enabled
-gpu-manager.service                  enabled enabled
 grub-initrd-fallback.service         enabled enabled
 grub2-common.service                 enabled enabled
 kdump-tools.service                  enabled enabled
@@ -24,7 +23,6 @@ keyboard-setup.service               enabled enabled
 lm-sensors.service                   enabled enabled
 lvm2-monitor.service                 enabled enabled
 netplan-configure.service            enabled enabled
-networkd-dispatcher.service          enabled enabled
 rsyslog.service                      enabled enabled
 setvtrgb.service                     enabled enabled
 sshd-keygen.service                  enabled enabled
@@ -40,7 +38,6 @@ cloud-init-hotplugd.socket           enabled enabled
 dm-event.socket                      enabled enabled
 docker.socket                        enabled enabled
 lvm2-lvmpolld.socket                 enabled enabled
-polkit-agent-helper.socket           enabled enabled
 ssh.socket                           enabled enabled
 systemd-networkd.socket              enabled enabled
 systemd-resolved-monitor.socket      enabled enabled
@@ -61,4 +58,4 @@ sysstat-collect.timer                enabled enabled
 sysstat-rotate.timer                 enabled enabled
 sysstat-summary.timer                enabled enabled
 
-61 unit files listed.
+58 unit files listed.

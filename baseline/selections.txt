@@ -5,7 +5,6 @@ apparmor					install
 apport						install
 apport-core-dump-handler			install
 apport-symptoms					install
-appstream					install
 apt						install
 base-files					install
 base-passwd					install
@@ -75,7 +74,6 @@ gdisk						install
 gettext-base					install
 gir1.2-girepository-3.0:amd64			install
 gir1.2-glib-2.0:amd64				install
-gir1.2-packagekitglib-1.0			install
 gnu-coreutils					install
 gnupg						install
 gnupg-l10n					install
@@ -119,7 +117,6 @@ less						install
 libacl1:amd64					install
 libaio1t64:amd64				install
 libapparmor1:amd64				install
-libappstream5:amd64				install
 libapt-pkg7.0:amd64				install
 libassuan9:amd64				install
 libatomic1:amd64				install
@@ -166,7 +163,6 @@ libdrm-amdgpu1:amd64				install
 libdrm-common					install
 libdrm-intel1:amd64				install
 libdrm2:amd64					install
-libduktape207:amd64				install
 libdw1t64:amd64					install
 libeatmydata1:amd64				install
 libedit2:amd64					install
@@ -185,7 +181,6 @@ libffi8:amd64					install
 libfido2-1:amd64				install
 libfreetype6:amd64				install
 libfuse3-4:amd64				install
-libfyaml0:amd64					install
 libgbm1:amd64					install
 libgcc-s1:amd64					install
 libgcrypt20:amd64				install
@@ -197,7 +192,6 @@ libgfxdr0:amd64					install
 libgirepository-2.0-0:amd64			install
 libgles2:amd64					install
 libglib2.0-0t64:amd64				install
-libglib2.0-bin					install
 libglib2.0-data					install
 libglusterfs0:amd64				install
 libglvnd0:amd64					install
@@ -207,7 +201,6 @@ libgpg-error0:amd64				install
 libgpm2:amd64					install
 libgprofng0:amd64				install
 libgssapi-krb5-2:amd64				install
-libgstreamer1.0-0:amd64				install
 libgudev-1.0-0:amd64				install
 libhogweed6t64:amd64				install
 libibverbs1:amd64				install
@@ -272,7 +265,6 @@ libnss-systemd:amd64				install
 libnuma1:amd64					install
 libonig5:amd64					install
 libp11-kit0:amd64				install
-libpackagekit-glib2-18:amd64			install
 libpam-cap:amd64				install
 libpam-modules:amd64				install
 libpam-modules-bin				install
@@ -288,7 +280,6 @@ libplist-2.0-4:amd64				install
 libpmem1:amd64					install
 libpmemobj1:amd64				install
 libpng16-16t64:amd64				install
-libpolkit-agent-1-0:amd64			install
 libpolkit-gobject-1-0:amd64			install
 libpopt0:amd64					install
 libproc-processtable-perl:amd64			install
@@ -325,7 +316,6 @@ libss2:amd64					install
 libssh2-1t64:amd64				install
 libssl3t64:amd64				install
 libstdc++6:amd64				install
-libstemmer0d:amd64				install
 libsystemd-shared:amd64				install
 libsystemd0:amd64				install
 libtasn1-6:amd64				install
@@ -361,7 +351,6 @@ libxcb1:amd64					install
 libxdmcp6:amd64					install
 libxext6:amd64					install
 libxml2-16:amd64				install
-libxmlb2:amd64					install
 libxmuu1:amd64					install
 libxshmfence1:amd64				install
 libxtables12:amd64				install
@@ -442,7 +431,6 @@ netbase						install
 netcat-openbsd					install
 netplan-generator				install
 netplan.io					install
-networkd-dispatcher				install
 nftables					install
 openssh-client					install
 openssh-server					install
@@ -450,7 +438,6 @@ openssh-sftp-server				install
 openssl						install
 openssl-provider-legacy				install
 os-prober					install
-packagekit					install
 passwd						install
 pci.ids						install
 pciutils					install
@@ -459,7 +446,6 @@ perl-base					install
 perl-modules-5.40				install
 pinentry-curses					install
 pnp.ids						install
-polkitd						install
 procps						install
 publicsuffix					install
 python-apt-common				install
@@ -476,7 +462,6 @@ python3-bpfcc					install
 python3-certifi					install
 python3-cffi-backend:amd64			install
 python3-chardet					install
-python3-click					install
 python3-configobj				install
 python3-cryptography				install
 python3-dbus					install
@@ -520,7 +505,6 @@ python3-rich					install
 python3-rpds-py					install
 python3-serial					install
 python3-setuptools				install
-python3-software-properties			install
 python3-systemd					install
 python3-typeguard				install
 python3-typing-extensions			install
@@ -528,7 +512,6 @@ python3-uc-micro				install
 python3-update-manager				install
 python3-urllib3					install
 python3-wadllib					install
-python3-xkit					install
 python3-yaml					install
 python3-zipp					install
 python3.14					install
@@ -541,9 +524,7 @@ rust-coreutils					install
 screen						install
 sed						install
 sensible-utils					install
-sgml-base					install
 shared-mime-info				install
-software-properties-common			install
 sqlite3						install
 squashfs-tools					install
 ssh-import-id					install
@@ -564,7 +545,6 @@ thermald					install
 thin-provisioning-tools				install
 traceroute					install
 tzdata						install
-ubuntu-drivers-common				install
 ubuntu-kernel-accessories			install
 ubuntu-keyring					install
 ubuntu-release-upgrader-core			install
@@ -586,7 +566,6 @@ wireless-regdb					install
 xauth						install
 xdg-user-dirs					install
 xkb-data					install
-xml-core					install
 xz-utils					install
 zlib1g:amd64					install
 zstd						install
