@@ -64,7 +64,6 @@ traceroute
 ubuntu-release-upgrader-core
 udev
 unattended-upgrades
-unminimize
 usbutils
 util-linux
 valgrind

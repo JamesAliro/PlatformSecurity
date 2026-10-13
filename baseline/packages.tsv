@@ -56,7 +56,6 @@ file	1:5.46-5build2
 finalrd	9build2
 findutils	4.10.0-3build2
 fio	3.41-2
-firmware-sof-signed	2025.12.2-1
 fuse3	3.18.2-1
 gawk	1:5.3.2-1ubuntu1.1
 gcc-16-base	16-20260322-1ubuntu1
@@ -181,12 +180,9 @@ libgnutls30t64	3.8.12-2ubuntu1.1
 libgpg-error0	1.58-2
 libgpm2	1.20.7-12build1
 libgssapi-krb5-2	1.22.1-2ubuntu4.1
-libgudev-1.0-0	1:238-7build1
 libhogweed6t64	3.10.2-1
 libibverbs1	61.0-2ubuntu3
 libidn2-0	2.3.8-4build1
-libimobiledevice-1.0-6	1.4.0-1build1
-libimobiledevice-glue-1.0-0	1.3.2-2build1
 libintl-perl	1.37-1
 libintl-xs-perl	1.37-1
 libip4tc2	1.8.11-2ubuntu3
@@ -256,11 +252,9 @@ libpci3	1:3.14.0-1build2
 libpciaccess0	0.18.1-1ubuntu4.1
 libpcre2-8-0	10.46-1build1
 libperl5.40	5.40.1-7ubuntu0.3
-libplist-2.0-4	2.7.0+git20250820-1build1
 libpmem1	1.13.1-1.1ubuntu4
 libpmemobj1	1.13.1-1.1ubuntu4
 libpng16-16t64	1.6.57-1ubuntu0.1
-libpolkit-gobject-1-0	127-2ubuntu1.1
 libpopt0	1.19+dfsg-2build1
 libproc-processtable-perl	0.637-1
 libproc2-0	2:4.0.4-9ubuntu1
@@ -310,7 +304,6 @@ libunistring5	1.3-2build1
 libupower-glib3	1.91.1-1
 liburcu8t64	0.15.6-1
 libusb-1.0-0	2:1.0.29-2build1
-libusbmuxd-2.0-7	2.1.1-1
 libuuid1	2.41.3-3ubuntu2.2
 libuv1t64	1.51.0-2ubuntu1
 libwayland-client0	1.24.0-2
@@ -327,9 +320,7 @@ libxcb-sync1	1.17.0-2ubuntu1
 libxcb-xfixes0	1.17.0-2ubuntu1
 libxcb1	1.17.0-2ubuntu1
 libxdmcp6	1:1.1.5-2
-libxext6	2:1.3.4-1build3
 libxml2-16	2.15.2+dfsg-0.1ubuntu0.3
-libxmuu1	2:1.1.3-4
 libxshmfence1	1.3.3-1build1
 libxtables12	1.8.11-2ubuntu3
 libxxhash0	0.8.3-2build1
@@ -403,7 +394,6 @@ openssh-server	1:10.2p1-2ubuntu3.6
 openssh-sftp-server	1:10.2p1-2ubuntu3.6
 openssl	3.5.5-1ubuntu3.7
 openssl-provider-legacy	3.5.5-1ubuntu3.7
-os-prober	1.84ubuntu1
 passwd	1:4.17.4-2ubuntu3
 pci.ids	0.0~2026.02.12-1
 pciutils	1:3.14.0-1build2
@@ -486,8 +476,6 @@ sed	4.9-2ubuntu1
 sensible-utils	0.0.26build1
 shared-mime-info	2.4-5build3
 sqlite3	3.46.1-9ubuntu0.3
-squashfs-tools	1:4.7.5-1
-ssh-import-id	5.11-0ubuntu4
 stress-ng	0.20.01-1
 sudo	1.9.17p2-1ubuntu3.2
 sudo-common	1.2ubuntu
@@ -510,10 +498,7 @@ ubuntu-release-upgrader-core	1:26.04.23
 ucf	3.0052ubuntu1
 udev	259.5-0ubuntu3.4
 unattended-upgrades	2.12ubuntu9
-unminimize	0.5build1
-upower	1.91.1-1
 usb.ids	2025.12.13-1
-usbmuxd	1.1.1-7
 usbutils	1:019-1
 util-linux	2.41.3-3ubuntu2.2
 valgrind	1:3.26.0-0ubuntu1
@@ -522,7 +507,6 @@ vim-common	2:9.1.2141-1ubuntu4.9
 vim-runtime	2:9.1.2141-1ubuntu4.9
 wget	1.25.0-2ubuntu4.4
 wireless-regdb	2026.05.30-0ubuntu1~26.04.1
-xauth	1:1.1.2-1.1build1
 xdg-user-dirs	0.19-1
 xkb-data	2.46-2
 xz-utils	5.8.3-1

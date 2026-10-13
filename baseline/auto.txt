@@ -36,7 +36,6 @@ eatmydata
 fdisk
 file
 finalrd
-firmware-sof-signed
 fuse3
 gawk
 gcc-16-base
@@ -151,12 +150,9 @@ libgnutls30t64
 libgpg-error0
 libgpm2
 libgssapi-krb5-2
-libgudev-1.0-0
 libhogweed6t64
 libibverbs1
 libidn2-0
-libimobiledevice-1.0-6
-libimobiledevice-glue-1.0-0
 libintl-perl
 libintl-xs-perl
 libip4tc2
@@ -226,11 +222,9 @@ libpci3
 libpciaccess0
 libpcre2-8-0
 libperl5.40
-libplist-2.0-4
 libpmem1
 libpmemobj1
 libpng16-16t64
-libpolkit-gobject-1-0
 libpopt0
 libproc-processtable-perl
 libproc2-0
@@ -280,7 +274,6 @@ libunistring5
 libupower-glib3
 liburcu8t64
 libusb-1.0-0
-libusbmuxd-2.0-7
 libuuid1
 libuv1t64
 libwayland-client0
@@ -297,9 +290,7 @@ libxcb-sync1
 libxcb-xfixes0
 libxcb1
 libxdmcp6
-libxext6
 libxml2-16
-libxmuu1
 libxshmfence1
 libxtables12
 libxxhash0
@@ -353,7 +344,6 @@ netcat-openbsd
 netplan-generator
 openssh-sftp-server
 openssl-provider-legacy
-os-prober
 passwd
 pci.ids
 perl
@@ -432,8 +422,6 @@ screen
 sed
 sensible-utils
 shared-mime-info
-squashfs-tools
-ssh-import-id
 sudo-common
 systemd-cryptsetup
 systemd-hwe-hwdb
@@ -444,14 +432,11 @@ thin-provisioning-tools
 tzdata
 ubuntu-keyring
 ucf
-upower
 usb.ids
-usbmuxd
 vim-common
 vim-runtime
 wget
 wireless-regdb
-xauth
 xdg-user-dirs
 xkb-data
 xz-utils
