@@ -1,7 +1,5 @@
 UNIT FILE                            STATE   PRESET
-apport-autoreport.path               enabled enabled
 apparmor.service                     enabled enabled
-apport.service                       enabled enabled
 blk-availability.service             enabled enabled
 chrony.service                       enabled enabled
 cloud-config.service                 enabled enabled
@@ -33,7 +31,6 @@ systemd-pstore.service               enabled enabled
 systemd-resolved.service             enabled enabled
 thermald.service                     enabled enabled
 unattended-upgrades.service          enabled enabled
-apport-forward.socket                enabled enabled
 cloud-init-hotplugd.socket           enabled enabled
 dm-event.socket                      enabled enabled
 docker.socket                        enabled enabled
@@ -43,7 +40,6 @@ systemd-networkd.socket              enabled enabled
 systemd-resolved-monitor.socket      enabled enabled
 systemd-resolved-varlink.socket      enabled enabled
 remote-fs.target                     enabled enabled
-apport-autoreport.timer              enabled enabled
 apt-daily-upgrade.timer              enabled enabled
 apt-daily.timer                      enabled enabled
 dpkg-db-backup.timer                 enabled enabled
@@ -58,4 +54,4 @@ sysstat-collect.timer                enabled enabled
 sysstat-rotate.timer                 enabled enabled
 sysstat-summary.timer                enabled enabled
 
-58 unit files listed.
+54 unit files listed.

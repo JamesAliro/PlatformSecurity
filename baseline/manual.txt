@@ -1,5 +1,4 @@
 apparmor
-apport
 apt
 bash
 bind9-dnsutils
@@ -16,6 +15,7 @@ diffutils
 docker-compose-v2
 docker.io
 e2fsprogs
+ethtool
 findutils
 fio
 grep
@@ -28,7 +28,7 @@ jq
 kdump-tools
 less
 libc-bin
-linux-generic
+linux-image-generic
 linux-tools-generic
 lm-sensors
 locales
@@ -45,7 +45,10 @@ needrestart
 netbase
 netplan.io
 nftables
+openssh-client
 openssh-server
+openssl
+pciutils
 python3
 rsyslog
 sqlite3

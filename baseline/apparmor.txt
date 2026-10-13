@@ -174,14 +174,14 @@ apparmor module is loaded.
 9 processes have profiles defined.
 9 processes are in enforce mode.
    /usr/sbin/chronyd (1034) 
-   /usr/sbin/chronyd (1063) 
-   /bin/prometheus (1622) docker-default
-   /usr/bin/bash (1660) docker-default
-   /usr/local/bin/alirosd (1869) docker-default
-   /usr/local/bin/metrics_scraper (1870) docker-default
-   /usr/sbin/sshd (1881) docker-default
-   /usr/sbin/netconfd-pro (1884) docker-default
-   /usr/sbin/rsyslogd (1070) rsyslogd
+   /usr/sbin/chronyd (1059) 
+   /bin/prometheus (1610) docker-default
+   /usr/bin/bash (1635) docker-default
+   /usr/local/bin/alirosd (1834) docker-default
+   /usr/local/bin/metrics_scraper (1835) docker-default
+   /usr/sbin/sshd (1847) docker-default
+   /usr/sbin/netconfd-pro (1850) docker-default
+   /usr/sbin/rsyslogd (1060) rsyslogd
 0 processes are in complain mode.
 0 processes are in prompt mode.
 0 processes are in kill mode.
