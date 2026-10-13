@@ -1,14 +1,14 @@
-NEXT                            LEFT LAST                        PASSED UNIT                         ACTIVATES
-Tue 2026-10-13 20:50:00 UTC 1min 37s -                                - sysstat-collect.timer        sysstat-collect.service
-Tue 2026-10-13 20:57:58 UTC     9min -                                - systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
-Tue 2026-10-13 21:15:43 UTC    27min Tue 2026-10-13 15:49:59 UTC      - apt-daily.timer              apt-daily.service
-Wed 2026-10-14 00:00:00 UTC 3h 11min Tue 2026-10-13 13:42:33 UTC      - dpkg-db-backup.timer         dpkg-db-backup.service
-Wed 2026-10-14 00:00:00 UTC 3h 11min -                                - sysstat-rotate.timer         sysstat-rotate.service
-Wed 2026-10-14 00:07:00 UTC 3h 18min -                                - sysstat-summary.timer        sysstat-summary.service
-Wed 2026-10-14 00:12:33 UTC 3h 24min Tue 2026-10-13 15:49:59 UTC      - motd-news.timer              motd-news.service
-Wed 2026-10-14 00:32:33 UTC 3h 44min Tue 2026-10-13 13:43:42 UTC      - logrotate.timer              logrotate.service
-Wed 2026-10-14 06:27:34 UTC       9h Tue 2026-10-13 14:02:02 UTC      - apt-daily-upgrade.timer      apt-daily-upgrade.service
-Sun 2026-10-18 03:10:16 UTC   4 days Mon 2026-10-12 14:38:54 UTC      - e2scrub_all.timer            e2scrub_all.service
-Mon 2026-10-19 01:28:37 UTC   5 days Mon 2026-10-12 14:49:34 UTC      - fstrim.timer                 fstrim.service
+NEXT                            LEFT LAST                             PASSED UNIT                         ACTIVATES
+Tue 2026-10-13 22:10:00 UTC 1min 56s Tue 2026-10-13 22:00:32 UTC    7min ago sysstat-collect.timer        sysstat-collect.service
+Wed 2026-10-14 00:00:00 UTC 1h 51min Tue 2026-10-13 13:42:33 UTC           - dpkg-db-backup.timer         dpkg-db-backup.service
+Wed 2026-10-14 00:00:00 UTC 1h 51min -                                     - sysstat-rotate.timer         sysstat-rotate.service
+Wed 2026-10-14 00:07:00 UTC 1h 58min -                                     - sysstat-summary.timer        sysstat-summary.service
+Wed 2026-10-14 00:12:19 UTC  2h 4min Tue 2026-10-13 13:43:42 UTC           - logrotate.timer              logrotate.service
+Wed 2026-10-14 03:20:38 UTC 5h 12min Tue 2026-10-13 15:49:59 UTC           - motd-news.timer              motd-news.service
+Wed 2026-10-14 06:52:07 UTC       8h Tue 2026-10-13 14:02:02 UTC           - apt-daily-upgrade.timer      apt-daily-upgrade.service
+Wed 2026-10-14 13:19:24 UTC      15h Tue 2026-10-13 21:15:55 UTC   43min ago apt-daily.timer              apt-daily.service
+Wed 2026-10-14 21:07:22 UTC      22h Tue 2026-10-13 20:58:45 UTC 1h 0min ago systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
+Sun 2026-10-18 03:10:25 UTC   4 days Mon 2026-10-12 14:38:54 UTC           - e2scrub_all.timer            e2scrub_all.service
+Mon 2026-10-19 00:31:41 UTC   5 days Mon 2026-10-12 14:49:34 UTC           - fstrim.timer                 fstrim.service
 
 11 timers listed.

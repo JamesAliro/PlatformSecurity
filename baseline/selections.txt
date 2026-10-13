@@ -474,7 +474,6 @@ rust-coreutils					install
 screen						install
 sed						install
 sensible-utils					install
-shared-mime-info				install
 sqlite3						install
 stress-ng					install
 sudo						install
@@ -507,7 +506,6 @@ vim-common					install
 vim-runtime					install
 wget						install
 wireless-regdb					install
-xdg-user-dirs					install
 xkb-data					install
 xz-utils					install
 zlib1g:amd64					install

@@ -421,7 +421,6 @@ rust-coreutils
 screen
 sed
 sensible-utils
-shared-mime-info
 sudo-common
 systemd-cryptsetup
 systemd-hwe-hwdb
@@ -437,7 +436,6 @@ vim-common
 vim-runtime
 wget
 wireless-regdb
-xdg-user-dirs
 xkb-data
 xz-utils
 zlib1g
