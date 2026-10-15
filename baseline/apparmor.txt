@@ -173,15 +173,15 @@ apparmor module is loaded.
    wpcom
 9 processes have profiles defined.
 9 processes are in enforce mode.
-   /usr/sbin/chronyd (1027) 
-   /usr/sbin/chronyd (1037) 
-   /bin/prometheus (1560) docker-default
-   /usr/bin/bash (1580) docker-default
-   /usr/local/bin/alirosd (1784) docker-default
-   /usr/local/bin/metrics_scraper (1785) docker-default
-   /usr/sbin/sshd (1796) docker-default
-   /usr/sbin/netconfd-pro (1799) docker-default
-   /usr/sbin/rsyslogd (1057) rsyslogd
+   /usr/sbin/chronyd (1020) 
+   /usr/sbin/chronyd (1038) 
+   /bin/prometheus (1630) docker-default
+   /usr/bin/bash (1643) docker-default
+   /usr/local/bin/alirosd (1792) docker-default
+   /usr/local/bin/metrics_scraper (1793) docker-default
+   /usr/sbin/sshd (1806) docker-default
+   /usr/sbin/netconfd-pro (1809) docker-default
+   /usr/sbin/rsyslogd (1055) rsyslogd
 0 processes are in complain mode.
 0 processes are in prompt mode.
 0 processes are in kill mode.

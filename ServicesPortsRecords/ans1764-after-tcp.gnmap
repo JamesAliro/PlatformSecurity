@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Thu Oct 15 13:49:39 2026 as: nmap -sS -p- -T4 -Pn --reason -oA ans1764-after-tcp 172.25.183.87
+Host: 172.25.183.87 (platformsecjames.mshome.net)	Status: Up
+Host: 172.25.183.87 (platformsecjames.mshome.net)	Ports: 22/open/tcp//ssh///, 830/open/tcp//netconf-ssh///, 8090/open/tcp//opsmessaging///, 9999/open/tcp//abyss///	Ignored State: closed (65531)
+# Nmap done at Thu Oct 15 13:49:40 2026 -- 1 IP address (1 host up) scanned in 0.66 seconds

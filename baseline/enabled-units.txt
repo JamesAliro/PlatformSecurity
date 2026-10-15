@@ -49,9 +49,8 @@ logrotate.timer                      enabled enabled
 mdcheck_continue.timer               enabled enabled
 mdcheck_start.timer                  enabled enabled
 mdmonitor-oneshot.timer              enabled enabled
-motd-news.timer                      enabled enabled
 sysstat-collect.timer                enabled enabled
 sysstat-rotate.timer                 enabled enabled
 sysstat-summary.timer                enabled enabled
 
-54 unit files listed.
+53 unit files listed.

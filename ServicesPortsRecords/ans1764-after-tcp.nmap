@@ -1,0 +1,12 @@
+# Nmap 7.98 scan initiated Thu Oct 15 13:49:39 2026 as: nmap -sS -p- -T4 -Pn --reason -oA ans1764-after-tcp 172.25.183.87
+Nmap scan report for platformsecjames.mshome.net (172.25.183.87)
+Host is up, received arp-response (0.00017s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE SERVICE      REASON
+22/tcp   open  ssh          syn-ack ttl 64
+830/tcp  open  netconf-ssh  syn-ack ttl 63
+8090/tcp open  opsmessaging syn-ack ttl 63
+9999/tcp open  abyss        syn-ack ttl 63
+MAC Address: 00:15:5D:CF:B4:02 (Microsoft)
+
+# Nmap done at Thu Oct 15 13:49:40 2026 -- 1 IP address (1 host up) scanned in 0.66 seconds

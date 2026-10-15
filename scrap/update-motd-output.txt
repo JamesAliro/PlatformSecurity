@@ -1,0 +1,5 @@
+33:[ -r /etc/default/motd-news ] && . /etc/default/motd-news
+35:# Exit immediately, unless we're enabled
+36:# This makes this script very easy to disable in /etc/default/motd-news configuration
+37:[ "$ENABLED" = "1" ] || exit 0
+39:# Ensure sane defaults

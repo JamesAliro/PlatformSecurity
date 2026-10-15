@@ -1,0 +1,3 @@
+base-files: /usr/lib/systemd/system/motd-news.timer
+base-files: /etc/update-motd.d/50-motd-news
+base-files: /usr/lib/systemd/system/motd-news.service
